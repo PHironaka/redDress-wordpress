@@ -143,7 +143,7 @@ export default IndexPage
 
 export const query = graphql`
    query {
-    allWordpressPage  (filter: { title: { eq:"Test"}}) {
+    allWordpressPage  (filter: { title: { eq:"Healing Environment"}}) {
       edges {
         node {
           id
