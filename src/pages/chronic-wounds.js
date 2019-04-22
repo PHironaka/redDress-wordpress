@@ -149,7 +149,7 @@ class ChronicWounds extends Component {
         <div class="chronic-outro">
            
           <div dangerouslySetInnerHTML={{ __html: node.acf.pagebottomsection }} />
-          <Img fluid={node.acf.partnerimage.localFile.childImageSharp.fluid} alt={node.id}/>
+          <Img fluid={node.featured_media.localFile.childImageSharp.fluid} alt={node.id}/>
 
         </div>
 
@@ -177,18 +177,18 @@ query {
         edges {
         node {
           id
-          acf {
-            pagebottomsection
-            partnerimage {
-              localFile {
-            childImageSharp {
+          featured_media {
+            localFile {
+              childImageSharp {
               fluid(maxWidth: 1000) {
                 ...GatsbyImageSharpFluid
               }
             }
-          }
-              
             }
+          }
+          acf {
+            pagebottomsection
+       
           }
           title
           excerpt
