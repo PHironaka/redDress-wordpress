@@ -120,7 +120,7 @@ class ChronicWounds extends Component {
   <FadeIn transitionDuration={500}>
         <ActiGraftSection>
             <div class="chronic-intro">
-            <Img fluid={node.acf.heroimage.localFile.childImageSharp.fluid} alt={node.id}/>
+            <Img fluid={node.acf.productimage.localFile.childImageSharp.fluid} alt={node.id}/>
             <div>
                 <h2>{node.title}</h2>
                 <div dangerouslySetInnerHTML={{ __html: node.content }} />
@@ -212,7 +212,7 @@ query {
             actigraft_costeffectivetreatment_image
             actigraft_costeffectivetreatment
 
-            heroimage {
+            productimage {
                 localFile {
                 childImageSharp {
                 fluid(maxWidth: 1000) {

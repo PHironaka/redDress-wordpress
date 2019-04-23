@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components"
+import FadeIn from 'react-fade-in'
 
 const Container = styled.div`
   margin: -3.9rem 0 0;
@@ -131,9 +132,10 @@ const IndexPage = ({ data }) => (
             {node.title}
           </h1>
      </div>
-  
+          <FadeIn transitionDuration={500}>
             <ShopifyContent dangerouslySetInnerHTML={{ __html: node.content }} />
-            </Container>
+          </FadeIn>
+        </Container>
         ))}
 
   </Layout>

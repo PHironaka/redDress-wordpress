@@ -6,9 +6,10 @@ const SubNavheader = styled.div`
     font-size: .7em;
     list-style: none;
     display: grid;
-    grid-template-columns: 60px 73px 118px;
+    grid-template-columns: 60px 73px 98px 20px;
     justify-content: end;
     font-family: 'LabGrotesque-Light';
+    align-items:center;
     a {
       color:#666;
     }
@@ -56,7 +57,7 @@ const Navbar = class extends React.Component {
       <div id="navMenu" className="navbar-menu">
       <SubNavheader>
           <li>
-            <Link className="navbar-item" to="/">
+            <Link className="navbar-item" to="news">
               News
             </Link>
           </li>
@@ -66,8 +67,14 @@ const Navbar = class extends React.Component {
             </Link>
           </li>
           <li>
-            <Link className="navbar-item" to="leadership">
+            <Link className="navbar-item" to="reimbursement">
               Reimbursement
+            </Link>
+          </li>
+
+          <li>
+            <Link className="navbar-item" to="contact">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
             </Link>
           </li>
         </SubNavheader>
@@ -81,7 +88,7 @@ const Navbar = class extends React.Component {
             </Link>
           </li>
           <li>
-            <Link className="navbar-item" to="education">
+            <Link className="navbar-item" to="patients">
               Patients
             </Link>
           </li>
@@ -91,15 +98,16 @@ const Navbar = class extends React.Component {
             </Link>
           </li>
           <li>
-            <Link className="navbar-item" to="leadership">
+            <Link className="navbar-item" to="about-us">
               About
             </Link>
           </li>
           <li>
-            <Link className="navbar-item" to="leadership">
+            <Link className="navbar-item" to="contact">
               Contact
             </Link>
           </li>
+
           
         </ul>
       </div>

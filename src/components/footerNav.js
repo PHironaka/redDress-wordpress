@@ -48,34 +48,32 @@ const FooterNav = class extends React.Component {
       <ul>
         <h4>Healthcare Providers</h4>
         <li> <Link to="/chronic-wounds">Chronic Wounds</Link> </li>
-        <li> <Link to="/about">Products</Link> </li>
+        <li> <Link to="/actigraft">Products</Link> </li>
         <li> <Link to="/about">Technology</Link> </li>
-        <li> <Link to="/about">Resources</Link> </li>
-        <li> <Link to="/about">Testimonials</Link> </li>
-        <li> <Link to="/about">Events</Link> </li>
+        <li> <Link to="/resources">Resources</Link> </li>
+        <li> <Link to="/news">Testimonials</Link> </li>
+        <li> <Link to="/events">Events</Link> </li>
       </ul>
       <ul>
         <h4> Patients</h4>
-        <li> <Link to="/about">Conditions</Link> </li>
+        <li> <Link to="/conditions">Conditions</Link> </li>
         <li> <Link to="/about">Procedures</Link> </li>
-        <li> <Link to="/about">Resource Center</Link> </li>
-        <li> <Link to="/about">Testimonials</Link> </li>
+        <li> <Link to="/resources">Resource Center</Link> </li>
+        <li> <Link to="/news">Testimonials</Link> </li>
       </ul>
       <ul>
         <h4> Product(s)</h4>
       </ul>
       <ul>
         <h4> About Us</h4>
-        <li> <Link to="/about">Company</Link> </li>
-        <li> <Link to="/about">Overview</Link> </li>
+        <li> <Link to="/about-us">Company Overview</Link> </li>
         <li> <Link to="/about">Professionals</Link> </li>
-        <li> <Link to="/about">Leadership Team</Link> </li>
-        <li> <Link to="/about">Medical Advisors</Link> </li>
+        <li> <Link to="/leadership">Leadership Team</Link> </li>
         <li> <Link to="/about">Careers</Link> </li>
       </ul>
       <ul>
         <h4> Contact Us</h4>
-        <li> <Link to="/about">Location & Form</Link> </li>
+        <li> <Link to="/contact">Location & Form</Link> </li>
       </ul>
 
       </Navigation>

@@ -28,7 +28,7 @@ const GlobalFooter = styled.footer`
     max-width: 1200px;
     margin: 0 auto;
 
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 1000px) {
           grid-template-columns: 1fr;
           grid-gap:2em;
     }
@@ -77,8 +77,8 @@ const Copyright = styled.div`
     grid-gap:2em;
     @media screen and (max-width: 850px) {
         grid-template-columns: 1fr;
-        grid-gap:2em;
-        margin: 0;
+        grid-gap:1em;
+        margin: 0 0 2em;
     }
 
     a {

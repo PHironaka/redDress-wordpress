@@ -15,7 +15,7 @@ const CopyContact = styled.div`
     margin-top: -89px;
     font-size: .8em;
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1000px) {
         margin-top: 50px;
         display:block;
      }  

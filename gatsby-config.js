@@ -14,6 +14,14 @@ module.exports = {
         }
       }
     },
+
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/pages`,
+        name: 'pages',
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -21,7 +29,9 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+   
     `gatsby-transformer-sharp`,
+    `gatsby-transformer-remark`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-emotion`,
     `gatsby-plugin-sharp`,
