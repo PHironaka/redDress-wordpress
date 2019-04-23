@@ -212,6 +212,15 @@ query {
             actigraft_costeffectivetreatment_image
             actigraft_costeffectivetreatment
 
+            heroimage {
+                localFile {
+                childImageSharp {
+                fluid(maxWidth: 1000) {
+                    ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            }
           }
           title
           excerpt
