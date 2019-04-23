@@ -35,7 +35,7 @@ class StaticPageTemplate extends React.Component {
         <PageContainer>
         <div className="full-width-image-container margin-top-0" style={{
                  backgroundImage: `url(
-                  ./images/bg.jpg)`,
+                  https://reddress-001.netlify.com/static/79e71e94ae199e296a9b3ef8b84b3290/5b12f/photo-1516670428252-df97bba108d1.jpg)`,
                  minHeight:'400px',
                  backgroundRepeat:'no-repeat',
                  backgroundSize: 'cover',
