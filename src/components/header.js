@@ -9,7 +9,7 @@ const StyledHeader = styled.header`
   z-index:10000;
   position:relative;
   max-width: 1200px;
-  margin: 1em auto;
+  margin: 8px auto 16px;
   padding: 0 1em;
   .bar {
     display: grid;
