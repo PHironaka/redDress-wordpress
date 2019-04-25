@@ -390,13 +390,13 @@ nav {
   padding:0 1em;
 }
 
-.chronicNav, .actiNav2, .actiNav3 {
+.actiNav1, .actiNav2, .actiNav3 {
   display:none;
   transition: all 0.5s ease;
     transition-delay: 2s;
 }
 
-.actiNav2.is-active, .actiNav3.is-active, .chronicNav.is-active, .chronicNav2.is-active {
+.actiNav2.is-active, .actiNav3.is-active, .actiNav1.is-active, .actiNav1.is-active {
   display: block;
 	height: auto;
   opacity: 1;
@@ -483,7 +483,7 @@ nav {
   z-index:10000;
 }
 
-.chronic-facts, .actigraft-2, .actigraft-3{
+.actigraft-1, .actigraft-2, .actigraft-3{
 
     color: #000;
     cursor: pointer;
@@ -491,7 +491,6 @@ nav {
     position: relative;
     width: 3.25rem;
     margin-left: auto;
-    transition-delay: 2s;
     transition: height 350ms ease-in-out, opacity 750ms ease-in-out;
     &.is-active {
     transition: height 350ms ease-in-out, opacity 750ms ease-in-out;
@@ -508,7 +507,7 @@ nav {
       position: absolute;
       -webkit-transform-origin: center;
       transform-origin: center;
-      transition-duration: 1s;
+      transition-duration: .2s;
       transition-property: background-color,opacity,-webkit-transform;
       transition-property: background-color,opacity,transform;
       transition-property: background-color,opacity,transform,-webkit-transform;
@@ -531,6 +530,27 @@ nav {
   }
 
 }  
+
+.actigraft-1, .actigraft-2, .actigraft-3 {
+  &.is-active {
+     transition-delay: 2s;
+    transition: height .35s ease-in-out,opacity .75s ease-in-out;
+    
+    .plus-1 {
+      opacity: 0;
+      transform: rotate(40deg);
+    }
+
+    .plus-2 {
+      top: 16px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    }
+
+}
+}
 
 .navbar-burger {
   @media screen and (min-width: 800px) {

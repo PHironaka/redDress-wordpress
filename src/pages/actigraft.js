@@ -16,6 +16,8 @@ const Chronic = styled.div`
       display:grid;
       grid-template-columns: 1fr 1fr;
       grid-gap:2em;
+      max-width:1120px;
+      margin:0 auto;
 
       @media screen and (max-width: 800px) {
         display:block;
@@ -134,7 +136,7 @@ const ActiGraftSymbols = styled.div`
 
 class ChronicWounds extends Component {
   componentDidMount() {
-   const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.chronic-facts'), 0);
+   const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.actigraft-1'), 0);
    if ($navbarBurgers.length > 0) {
  
        $navbarBurgers.forEach( el => {
@@ -265,18 +267,77 @@ class ChronicWounds extends Component {
         </ActiGraftSection>
         </div>
 
-        <div class="chronic-item">
+        <div class="acti-item">
         <div>
         <h3>Benefits</h3>
         </div>
-        <div className="chronic-facts" data-target="chronicNav">
-          <span></span>
-          <span></span>
+        <div className="actigraft-1" data-target="actiNav1">
+        <span className="plus-1"></span>
+          <span className="plus-2"></span>
         </div>
-        <div id="chronicNav" className="chronicNav">
-            <p> 
-              A major cause of chronic wounds is diabetes, which is increasing in prevalence. Diabetes causes neuropathy, which inhibits nociception and the perception of pain. Thus, patients may not initially notice small wounds to legs and feet, and may therefore fail to prevent infection or repeated injury. Further, diabetes causes immune compromise and damage to small blood vessels, preventing adequate oxygenation of tissue, which can cause chronic wounds. Pressure also plays a role in the formation of diabetic ulcers.
-            </p>
+        <div id="actiNav1" className="actiNav1">
+           
+            <ul>
+            <h3> 
+            Efficient Wound Treatment
+            </h3>
+              <li>
+              Provides the wound with an optimal, natural healing environment, allowing the healing process to proceed unhindered.
+              </li>
+              <li>
+              Weekly vs. daily application saves facility staff nursing time.              </li>
+              <li>
+              Published results of 72% complete healing within 12 weeks.              </li>
+              <li>
+              Provides the wound with an optimal, natural healing environment, allowing the healing process to proceed unhindered.
+              </li>
+            </ul>
+
+            <ul>
+            <h3> 
+            Simplified Procedures
+            </h3>
+              <li>
+              Single-use, state-of-the-art, autologous graft wound care solution.
+              </li>
+              <li>
+              Designed with nurses in mind, ActiGraft can be easily prepared at the patient's bedside in 12 minutes.              </li>
+              <li>
+              Ready to use right out of the box. Eliminates need for complex processing, temperature monitoring or storage.
+           </li>
+         
+            </ul>
+
+            <ul>
+            <h3> 
+            Reduced Costs
+            </h3>
+              <li>
+              Because ActiGraft uses the patient’s own blood, we aren’t required to register as a tissue donor bank or go through the regulatory recording processes of skin substitutes. This reduces administration and documentation requirements.              </li>
+              <li>
+              No capital equipment requirements.
+            </li>
+              <li>
+              Reduced costs compared to other chronic wound treatments.              </li>
+            
+            </ul>
+
+            <ul>
+            <h3> 
+            Increased Patient Safety and Comfort
+            </h3>
+              <li>
+              Created from the patient's blood, assuring safe and effective management of the wound.  </li>
+              <li>
+              Significantly faster healing with less wound interaction and patient pain.
+            </li>
+              <li>
+              Patients have reported reduced pain and improved quality of life. Unlike some other dressings, ActiGraft doesn’t abrade or irritate the skin’s dermal layer.           </li>
+            
+            </ul>
+
+
+
           </div>
         </div>
 
@@ -286,13 +347,50 @@ class ChronicWounds extends Component {
         <h3>Antigraft Uses </h3>
         </div>
         <div className="actigraft-2" data-target="actiNav2">
-          <span></span>
-          <span></span>
+          <span className="plus-1"></span>
+          <span className="plus-2"></span>
         </div>
         <div id="actiNav2" className="actiNav2">
-            <p> 
-              A major cause of chronic wounds is diabetes, which is increasing in prevalence. Diabetes causes neuropathy, which inhibits nociception and the perception of pain. Thus, patients may not initially notice small wounds to legs and feet, and may therefore fail to prevent infection or repeated injury. Further, diabetes causes immune compromise and damage to small blood vessels, preventing adequate oxygenation of tissue, which can cause chronic wounds. Pressure also plays a role in the formation of diabetic ulcers.
-            </p>
+        <ul>
+            <h3> 
+            ActiGraft can be used for a wide variety of hard-to-treat chronic wounds, including but not limited to:
+            </h3>
+              <li>
+              Diabetic/Neuropathic ulcers
+              </li>
+              <li>
+              Pressure Ulcers/Injury   
+              </li>           
+              <li>
+              Venous Stasis Ulcers           
+              </li>
+              <li>
+              Post-surgical wounds           
+              </li>
+              <li>
+              Traumatic wounds           
+              </li>
+              <li>
+              Skin Tears
+              </li>
+            </ul>
+
+            <ul>
+            <h3> 
+            Contra Indicated in wounds with:
+            </h3>
+              <li>
+              Untreated osteomyelitis
+              </li>
+              <li>
+              Active infections
+              </li>           
+              <li>
+              Cancer of the wound bed
+              </li>
+             
+            </ul>
+            
           </div>
         </div>
           
@@ -303,13 +401,24 @@ class ChronicWounds extends Component {
         <h3>Technical Specs</h3>
         </div>
         <div className="actigraft-3" data-target="actiNav3">
-          <span></span>
-          <span></span>
+          <span className="plus-1"></span>
+          <span className="plus-2"></span>
         </div>
         <div id="actiNav3" className="actiNav3">
-            <p> 
-              A major cause of chronic wounds is diabetes, which is increasing in prevalence. Diabetes causes neuropathy, which inhibits nociception and the perception of pain. Thus, patients may not initially notice small wounds to legs and feet, and may therefore fail to prevent infection or repeated injury. Further, diabetes causes immune compromise and damage to small blood vessels, preventing adequate oxygenation of tissue, which can cause chronic wounds. Pressure also plays a role in the formation of diabetic ulcers.
-            </p>
+            <ul>
+              <li>
+              Radius of ActiGraft clot – 3cm (Diameter 6cm)
+              </li>
+              <li>
+              Sq centimeters – 28.3cm
+              </li>
+              <li>
+              15ml of blood required
+              </li>
+              <li>
+              Storage conditions - Store in the original container at a controlled room temperature of 15°C (59°F) – 25°C (77°F). Protect from freezing and avoid excessive heat.
+              </li>
+            </ul>
           </div>
         </div>
           
@@ -321,7 +430,8 @@ class ChronicWounds extends Component {
 <EducationActigraft>
 <div>
 <h3>Education for the medical professional</h3>
-<p>Upcoming Events Accompanying messaging around product up to 3 lines max. It could also go here. Accompanying messaging</p>
+<p>Our Education Program is designed to help medical professionals learn more about emerging technologies and innovative wound care solutions. 
+</p>
 <a href="https://google.com" target="_blank" rel="noopener noreferrer">Learn More <Arrow /></a></div>
 <img src="https://phiro.000webhostapp.com/wp-content/uploads/2019/04/rawpixel-472352-unsplash.jpg" alt="" />
 </EducationActigraft>   
