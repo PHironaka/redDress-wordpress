@@ -5,6 +5,7 @@ import EducationPage from '../components/educationPage';
 import { graphql } from 'gatsby';
 import styled from "styled-components"
 import FadeIn from 'react-fade-in'
+import SEO from '../components/seo'
 
 const ShopifyContent = styled.div `
    margin: 3em 0;
@@ -12,6 +13,7 @@ const ShopifyContent = styled.div `
 
 const Education = ({ data }) => (
   <Layout>
+        <SEO title="Education" keywords={[`gatsby`, `application`, `react`]} />
       <EducationPage>
         {data.allWordpressPage.edges.map(({ node }) => (
             <div key={node.id} >

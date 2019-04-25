@@ -143,6 +143,36 @@ class ChronicWounds extends Component {
           </div>
         </div>
 
+        <div class="chronic-item">
+        <div>
+        <h4>Diabetic Ulcers</h4>
+        </div>
+        <div className="chronic-facts" data-target="chronicNav">
+          <span></span>
+          <span></span>
+        </div>
+        <div id="chronicNav" className="chronicNav">
+            <p> 
+              A major cause of chronic wounds is diabetes, which is increasing in prevalence. Diabetes causes neuropathy, which inhibits nociception and the perception of pain. Thus, patients may not initially notice small wounds to legs and feet, and may therefore fail to prevent infection or repeated injury. Further, diabetes causes immune compromise and damage to small blood vessels, preventing adequate oxygenation of tissue, which can cause chronic wounds. Pressure also plays a role in the formation of diabetic ulcers.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="chronic-item">
+        <div>
+        <h4>Diabetic Ulcers</h4>
+        </div>
+        <div className="chronic-facts" data-target="chronicNav">
+          <span></span>
+          <span></span>
+        </div>
+        <div id="chronicNav" className="chronicNav">
+            <p> 
+              A major cause of chronic wounds is diabetes, which is increasing in prevalence. Diabetes causes neuropathy, which inhibits nociception and the perception of pain. Thus, patients may not initially notice small wounds to legs and feet, and may therefore fail to prevent infection or repeated injury. Further, diabetes causes immune compromise and damage to small blood vessels, preventing adequate oxygenation of tissue, which can cause chronic wounds. Pressure also plays a role in the formation of diabetic ulcers.
+            </p>
+          </div>
+        </div>
         
         </ChronicSection>
        

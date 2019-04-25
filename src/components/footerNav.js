@@ -67,9 +67,8 @@ const FooterNav = class extends React.Component {
       <ul>
         <h4> About Us</h4>
         <li> <Link to="/about-us">Company Overview</Link> </li>
-        <li> <Link to="/about">Professionals</Link> </li>
         <li> <Link to="/leadership">Leadership Team</Link> </li>
-        <li> <Link to="/about">Careers</Link> </li>
+        <li> <Link to="/careers">Careers</Link> </li>
       </ul>
       <ul>
         <h4> Contact Us</h4>

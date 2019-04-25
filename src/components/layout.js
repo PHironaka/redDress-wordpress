@@ -390,18 +390,18 @@ nav {
   padding:0 1em;
 }
 
-.chronicNav {
+.chronicNav, .actiNav2, .actiNav3 {
   display:none;
   transition: all 0.5s ease;
     transition-delay: 2s;
 }
 
-.chronicNav.is-active, .chronicNav2.is-active {
+.actiNav2.is-active, .actiNav3.is-active, .chronicNav.is-active, .chronicNav2.is-active {
   display: block;
 	height: auto;
   opacity: 1;
   transition: all 0.5s ease;
-    transition-delay: 2s;
+  transition-delay: 2s;
 }
 
 .navbar-menu {
@@ -483,7 +483,7 @@ nav {
   z-index:10000;
 }
 
-.chronic-facts {
+.chronic-facts, .actigraft-2, .actigraft-3{
 
     color: #000;
     cursor: pointer;
@@ -503,7 +503,7 @@ nav {
     span {
       background-color: currentColor;
       display: block;
-      height: 1.5px;
+      height: 2px;
       left: calc(50% - 8px);
       position: absolute;
       -webkit-transform-origin: center;
