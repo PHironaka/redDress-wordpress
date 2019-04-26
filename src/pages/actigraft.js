@@ -50,7 +50,9 @@ const Chronic = styled.div`
       border-top:1px solid;
       padding:17px 0 8px;
 
-      
+      h3 {
+        font-size:1.5em;
+      }
 
       &.last {
         border-bottom:1px solid;
@@ -77,7 +79,11 @@ const Chronic = styled.div`
     }
 
     ul {
-      margin-top:2em;
+      margin-left:0em;
+
+      li {
+        margin-left:2em;
+      }
     }
 `
 const ActiGraftSection = styled.div`

@@ -5,10 +5,11 @@ import styled from "styled-components"
 const Redress = styled.svg `
    max-width: 135px;
    padding: 0 1em;
+   margin-top:10px;
 `
 
 const SvgComponent = props => (
-    <Link to="/">
+    <Link to="/" name="Redress Logo">
         <Redress width="160" viewBox="0 0 160 127" xmlns="http://www.w3.org/2000/svg">
             <g id="Page-3" fill="none" fill-rule="evenodd">
                 <g id="RedDress_Website_Mockup_v4.0" transform="translate(-424 -264)">

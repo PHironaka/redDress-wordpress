@@ -421,6 +421,8 @@ nav {
     display: grid;
     text-align:right;
     grid-template-columns: repeat(5, auto);
+    grid-gap:2em;
+    
     @media screen and (max-width: 800px) {
       display: block;
       padding:0 ;

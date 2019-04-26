@@ -16,6 +16,10 @@ const Chronic = styled.div`
       grid-template-columns: repeat(2, auto);
       grid-gap:2em;
 
+      ul {
+        margin:1em 0 2em;
+      }
+
       @media screen and (max-width: 800px) {
         display:block;
     
@@ -58,8 +62,17 @@ const Chronic = styled.div`
       margin:1em 0 10px;
     }
 
+    p {
+      margin-bottom:2em;
+    }
+
     ul {
-      margin-top:2em;
+      margin:0 0 2em;
+
+      li {
+        margin-left:3em;
+        
+      }
     }
 `
 const ChronicSection = styled.div`
@@ -68,6 +81,25 @@ width: 100vw;
 margin-left: calc(50% - 8px - 50vw);
 position: relative;
 padding: 4em 2em;
+
+.acti-item {
+      display:grid;
+      grid-template-columns: repeat(2, auto);
+      grid-gap:2em;
+      border-top:1px solid;
+      padding:17px 0 8px;
+
+      h3 {
+        font-size:1.5em;
+      }
+
+      &.last {
+        border-bottom:1px solid;
+      }
+      
+    }
+
+
 `
 const ChronicTypes = styled.h3 `
     font-size:1.8em;
@@ -77,27 +109,52 @@ const ChronicTypes = styled.h3 `
 class ChronicWounds extends Component {
 
   componentDidMount() {
-    // Get all "navbar-burger" elements
-   const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.chronic-facts'), 0);
-    // Check if there are any navbar burgers
-   if ($navbarBurgers.length > 0) {
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.actigraft-1'), 0);
+    if ($navbarBurgers.length > 0) {
+  
+        $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+  
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+  
+        });
+      });
+    }
  
-     // Add a click event on each of them
-       $navbarBurgers.forEach( el => {
-       el.addEventListener('click', () => {
+    const $dropdownMenu2 = Array.prototype.slice.call(document.querySelectorAll('.actigraft-2'), 0);
+    if ($dropdownMenu2.length > 0) {
+  
+        $dropdownMenu2.forEach( el => {
+        el.addEventListener('click', () => {
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+  
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+  
+        });
+      });
+    }
  
-         // Get the target from the "data-target" attribute
-         const target = el.dataset.target;
-         const $target = document.getElementById(target);
+    const $dropdownMenu3 = Array.prototype.slice.call(document.querySelectorAll('.actigraft-3'), 0);
+    if ($dropdownMenu3.length > 0) {
+  
+        $dropdownMenu3.forEach( el => {
+        el.addEventListener('click', () => {
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+  
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+  
+        });
+      });
+    }
  
-         // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-         el.classList.toggle('is-active');
-         $target.classList.toggle('is-active');
- 
-       });
-     });
-   }
- }
+  }
 
     render() {
       const data = this.props.data
@@ -128,49 +185,77 @@ class ChronicWounds extends Component {
         <ChronicSection>
 
         <ChronicTypes>The 3 Main Types of Chronic Wounds </ChronicTypes>
-        <div class="chronic-item">
+        <div class="acti-item">
         <div>
-        <h4>Diabetic Ulcers</h4>
+        <h3>Diabetic Ulcers</h3>
         </div>
-        <div className="chronic-facts" data-target="chronicNav">
-          <span></span>
-          <span></span>
+        <div className="actigraft-1" data-target="actiNav1">
+        <span className="plus-1"></span>
+          <span className="plus-2"></span>
         </div>
-        <div id="chronicNav" className="chronicNav">
-            <p> 
-              A major cause of chronic wounds is diabetes, which is increasing in prevalence. Diabetes causes neuropathy, which inhibits nociception and the perception of pain. Thus, patients may not initially notice small wounds to legs and feet, and may therefore fail to prevent infection or repeated injury. Further, diabetes causes immune compromise and damage to small blood vessels, preventing adequate oxygenation of tissue, which can cause chronic wounds. Pressure also plays a role in the formation of diabetic ulcers.
-            </p>
+        <div id="actiNav1" className="actiNav1">
+           
+           <p>
+           A major cause of chronic wounds is diabetes, which is increasing in prevalence. Diabetes causes neuropathy, which inhibits nociception and the perception of pain. Thus, patients may not initially notice small wounds to legs and feet, and may therefore fail to prevent infection or repeated injury. Further, diabetes causes immune compromise and damage to small blood vessels, preventing adequate oxygenation of tissue, which can cause chronic wounds. Pressure also plays a role in the formation of diabetic ulcers.
+
+           </p>
+          
+           <ul>
+            <h4> 
+            Efficient Wound Treatment
+            </h4>
+              <li>
+              $5,391, on average, to treat (most expensive type of chronic wound to treat)
+              </li>
+              <li>
+              2 times the cost of other types of chronic ulcers
+           </li>
+              <li>
+              $18,977 cost for diabetes mellitus (DM) with chronic ulcer versus $9,958 for DM alone
+              </li>
+              <li>
+              21.3% hospital readmission rate for DM with chronic ulcer versus 8.5% for DM w/o complication
+              </li>
+
+              
+            </ul>
+
+
+
           </div>
         </div>
 
-        <div class="chronic-item">
+        <div class="acti-item">
         <div>
-        <h4>Diabetic Ulcers</h4>
+        <h3>Venous and Arterial Ulcers</h3>
         </div>
-        <div className="chronic-facts" data-target="chronicNav">
-          <span></span>
-          <span></span>
+        <div className="actigraft-2" data-target="actiNav2">
+        <span className="plus-1"></span>
+          <span className="plus-2"></span>
         </div>
-        <div id="chronicNav" className="chronicNav">
-            <p> 
-              A major cause of chronic wounds is diabetes, which is increasing in prevalence. Diabetes causes neuropathy, which inhibits nociception and the perception of pain. Thus, patients may not initially notice small wounds to legs and feet, and may therefore fail to prevent infection or repeated injury. Further, diabetes causes immune compromise and damage to small blood vessels, preventing adequate oxygenation of tissue, which can cause chronic wounds. Pressure also plays a role in the formation of diabetic ulcers.
-            </p>
+        <div id="actiNav2" className="actiNav2">
+           <p>
+           Venous ulcers usually occur in the legs and mostly affect the elderly. They are thought to be due to venous hypertension caused by improper function of valves that exist in the veins to prevent blood from flowing backward. This dysfunction causes ischemia that, combined with reperfusion injury, leads to tissue damage and wounds.
+           </p>
+            
+
           </div>
         </div>
 
 
-        <div class="chronic-item">
+        <div class="acti-item last">
         <div>
-        <h4>Diabetic Ulcers</h4>
+        <h3>Pressure Ulcers</h3>
         </div>
-        <div className="chronic-facts" data-target="chronicNav">
-          <span></span>
-          <span></span>
+        <div className="actigraft-3" data-target="actiNav3">
+          <span className="plus-1"></span>
+          <span className="plus-2"></span>
         </div>
-        <div id="chronicNav" className="chronicNav">
-            <p> 
-              A major cause of chronic wounds is diabetes, which is increasing in prevalence. Diabetes causes neuropathy, which inhibits nociception and the perception of pain. Thus, patients may not initially notice small wounds to legs and feet, and may therefore fail to prevent infection or repeated injury. Further, diabetes causes immune compromise and damage to small blood vessels, preventing adequate oxygenation of tissue, which can cause chronic wounds. Pressure also plays a role in the formation of diabetic ulcers.
-            </p>
+        <div id="actiNav3" className="actiNav3">
+        <p>
+        Pressure ulcers usually occur in people with conditions, such as paralysis, that inhibit movement of body parts commonly subjected to pressure—including heels, shoulder blades, and the sacrum. Pressure ulcers are caused by ischemia that occurs when pressure on the tissue is greater than the pressure in capillaries, restricting blood flow into the area. Muscle tissue, which needs more oxygen and nutrients than skin does, shows the worst effects from prolonged pressure. As in other chronic ulcers, reperfusion injury damages tissue.
+           </p>
+            
           </div>
         </div>
         
