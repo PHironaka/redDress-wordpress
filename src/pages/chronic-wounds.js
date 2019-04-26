@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import FadeIn from 'react-fade-in'
@@ -81,6 +81,10 @@ width: 100vw;
 margin-left: calc(50% - 8px - 50vw);
 position: relative;
 padding: 4em 2em;
+
+h4 {
+  margin-bottom:2em;
+}
 
 .acti-item {
       display:grid;

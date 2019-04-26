@@ -430,7 +430,7 @@ nav {
       height:100vh;
       width:100vw;
       background:white;
-      top:0;
+      top:56px;
       left:0;
       margin:0;
 
@@ -558,7 +558,7 @@ nav {
   @media screen and (min-width: 800px) {
     display: none;
   }
-    padding-top: 1em;
+    padding-top: 26px;
     color: #000;
     cursor: pointer;
     display: block;
@@ -579,7 +579,7 @@ nav {
     }
   
     .icon-2 {
-      top: 16px;
+      top: 26px;
     -webkit-transform: rotate(-135deg);
     -moz-transform: rotate(-135deg);
     -o-transform: rotate(-135deg);

@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const Navigation = styled.div`
   display: grid;
   grid-template-columns: repeat(5,auto);
-  grid-gap:3em;
+  grid-gap:1em;
   @media screen and (max-width: 1050px) {
       grid-template-columns: repeat(3,auto);
       grid-gap:2em;

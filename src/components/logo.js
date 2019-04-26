@@ -5,7 +5,7 @@ import styled from "styled-components"
 const Redress = styled.svg `
    max-width: 135px;
    padding: 0 1em;
-   margin-top:10px;
+   margin-top:8px;
 `
 
 const SvgComponent = props => (

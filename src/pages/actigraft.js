@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import FadeIn from 'react-fade-in'
@@ -284,9 +284,9 @@ class ChronicWounds extends Component {
         <div id="actiNav1" className="actiNav1">
            
             <ul>
-            <h3> 
+            <h4> 
             Efficient Wound Treatment
-            </h3>
+            </h4>
               <li>
               Provides the wound with an optimal, natural healing environment, allowing the healing process to proceed unhindered.
               </li>
@@ -300,9 +300,9 @@ class ChronicWounds extends Component {
             </ul>
 
             <ul>
-            <h3> 
+            <h4> 
             Simplified Procedures
-            </h3>
+            </h4>
               <li>
               Single-use, state-of-the-art, autologous graft wound care solution.
               </li>
@@ -315,9 +315,9 @@ class ChronicWounds extends Component {
             </ul>
 
             <ul>
-            <h3> 
+            <h4> 
             Reduced Costs
-            </h3>
+            </h4>
               <li>
               Because ActiGraft uses the patient’s own blood, we aren’t required to register as a tissue donor bank or go through the regulatory recording processes of skin substitutes. This reduces administration and documentation requirements.              </li>
               <li>
@@ -329,9 +329,9 @@ class ChronicWounds extends Component {
             </ul>
 
             <ul>
-            <h3> 
+            <h4> 
             Increased Patient Safety and Comfort
-            </h3>
+            </h4>
               <li>
               Created from the patient's blood, assuring safe and effective management of the wound.  </li>
               <li>
@@ -358,9 +358,9 @@ class ChronicWounds extends Component {
         </div>
         <div id="actiNav2" className="actiNav2">
         <ul>
-            <h3> 
+            <h4> 
             ActiGraft can be used for a wide variety of hard-to-treat chronic wounds, including but not limited to:
-            </h3>
+            </h4>
               <li>
               Diabetic/Neuropathic ulcers
               </li>
@@ -382,9 +382,9 @@ class ChronicWounds extends Component {
             </ul>
 
             <ul>
-            <h3> 
+            <h4> 
             Contra Indicated in wounds with:
-            </h3>
+            </h4>
               <li>
               Untreated osteomyelitis
               </li>

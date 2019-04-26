@@ -1,9 +1,10 @@
 import PropTypes from "prop-types"
 import React from "react"
+import { StaticQuery, graphql } from "gatsby"
 import Nav from './nav'
 import RedressLogo from './logo'
 import styled from 'styled-components';
-
+import Search from "./search"
 
 const StyledHeader = styled.header`
   z-index:10000;
@@ -12,6 +13,10 @@ const StyledHeader = styled.header`
   margin: 8px auto 16px;
   padding: 0 1em;
   height:95px;
+
+  .search {
+    display:none;
+  }
   .bar {
     display: grid;
     grid-template-columns: repeat(2,auto);
@@ -22,13 +27,29 @@ const StyledHeader = styled.header`
     border-bottom: 1px solid ${props => props.theme.lightgrey};
   }
 `
-const Header = ({ siteTitle }) => (
+const Header = ({siteTitle }) => (
+
+  <StaticQuery
+    query={graphql`
+      query SearchIndexQuery {
+        siteSearchIndex {
+          index
+        }
+      }
+    `}
+    render={data => (
+
   <StyledHeader>
   <div className="bar">
       <RedressLogo />
     <Nav />
   </div>
+  <Search searchIndex={data.siteSearchIndex.index} />
+
 </StyledHeader>
+    )}
+/>
+
 )
 
 Header.propTypes = {

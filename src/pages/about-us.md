@@ -1,5 +1,5 @@
 ---
-title: About Us
+title: About
 date: "2017-04-13"
 ---
 

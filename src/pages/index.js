@@ -5,7 +5,7 @@ import styled from "styled-components"
 import FadeIn from 'react-fade-in'
 
 const Container = styled.div`
-  margin: -3.9rem 0 0;
+  margin: -53px 0 0;
   grid-gap: 3em;
   padding: 0;
 
@@ -53,7 +53,7 @@ const ShopifyContent = styled.div `
       margin-bottom:1em;
     }
     div {
-      margin: 2em;
+      margin: 2em 2em 2em 0;
       @media screen and (max-width: 850px) {
         margin:1em 0;
         

@@ -10,6 +10,15 @@ const SubNavheader = styled.div`
     justify-content: end;
     font-family: 'LabGrotesque-Light';
     align-items:center;
+
+    @media screen and (max-width: 800px) {
+      position:absolute;
+      top:56px;
+      left:0;
+      margin:0;
+    }
+
+
     a {
       color:#666;
     }
@@ -107,7 +116,6 @@ const Navbar = class extends React.Component {
               Contact
             </Link>
           </li>
-
           
         </ul>
       </div>
