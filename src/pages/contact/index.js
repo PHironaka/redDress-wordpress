@@ -82,7 +82,6 @@ export default class Index extends React.Component {
       <Layout>
     <SEO title="Contact Us" />
     <Contact>
-
     <div className="full-width-image-container margin-top-0" style={{
                  backgroundImage: `url(
                   https://phiro.000webhostapp.com/wp-content/uploads/2019/05/static-head-contactb.jpg)`,
