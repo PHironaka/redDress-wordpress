@@ -12,7 +12,6 @@ class Leadership extends Component {
         <Layout>
         <SEO title="Leadership" keywords={[`gatsby`, `application`, `react`]} />
         <LeadershipProfile >
-
             {data.allWordpressPage.edges.map(({ node }) => (
               <div key={node.id}>
               {/* <Img fluid={node.image.localFile.childImageSharp.fluid} alt={node.id}/> */}

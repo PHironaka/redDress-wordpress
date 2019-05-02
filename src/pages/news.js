@@ -9,17 +9,38 @@ import Img from 'gatsby-image'
 const NewsPage = styled.div`
   padding: 0 2em;
   margin-top: -51px;
+
+  h1{
+      position:relative;
+      top:100px;
+      font-size:6em;
+      padding: 0 36px;
+      max-width: 1200px;
+      margin: 0 auto;
+
+      @media screen and (max-width: 750px) {
+        font-size:2.5em;
+        margin: 0;
+
+    }
+  }
+`
+
+const IntroNews = styled.p`
+margin:2em 0;
 `
 const NewsContainer = styled.div`
-  border-top:1px solid;
   margin-top:2em;
   padding:1em 0;
 `
 const Post = styled.div`
   display:grid;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns:1fr ;
   grid-gap: 2em;
   margin: 1em 0 2em;
+  padding:2em 8em 0 0;
+  border-top:1px solid;
+
 
   @media screen and (max-width: 800px) {
       display:block;
@@ -31,7 +52,7 @@ const Post = styled.div`
   }
 `
 const ReadArticle = styled.a`
-  margin:2em 0;
+  margin:2em 0 0;
   display:block;
 `
 
@@ -41,7 +62,7 @@ class News extends Component {
 
     return (
   <Layout>
-    <SEO title="Page two" />
+    <SEO title="News" />
     <NewsPage>
     <div className="full-width-image-container margin-top-0" style={{
                  backgroundImage: `url(
@@ -54,9 +75,14 @@ class News extends Component {
                  position:'relative', 
                  width: '100vw',
                  
-               }} />
-      <h1>News</h1>
-      <p>The latest news, updates, and insights from RedDress. </p>
+               }} >
+       <h1
+                 className="has-text-weight-bold is-size-1"
+                 style={{
+                 color: 'white',
+                 }}
+               >News</h1>
+      </div>
       <NewsContainer>
 
       {data.allWordpressPost.edges.map(({ node }) => (
@@ -67,7 +93,6 @@ class News extends Component {
               <div dangerouslySetInnerHTML={{ __html: node.content }} />
               <ReadArticle href="https://google.com" target="_blank">Read More <Arrow /> </ReadArticle>
             </div>
-            <Img fluid={node.featured_media.localFile.childImageSharp.fluid} alt={node.id}/>
 
           </Post>
         </FadeIn>

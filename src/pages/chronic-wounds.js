@@ -11,6 +11,22 @@ const Chronic = styled.div`
     gap: 3em 3em;
     padding: 0 2em;
 
+
+  h1{
+      position:relative;
+      top:100px;
+      font-size:6em;
+      padding: 0 36px;
+      max-width: 1200px;
+      margin: 0 auto;
+
+      @media screen and (max-width: 750px) {
+        font-size:2.5em;
+        margin: 0;
+
+    }
+  }
+
     .chronic-intro {
       display:grid;
       grid-template-columns: repeat(2, auto);
@@ -80,7 +96,6 @@ const ChronicSection = styled.div`
 width: 100vw;
 margin-left: calc(50% - 8px - 50vw);
 position: relative;
-padding: 4em 2em;
 
 h4 {
   margin-bottom:2em;
@@ -103,6 +118,12 @@ h4 {
       
     }
 
+
+`
+const ChronicContainer = styled.div`
+   padding: 3em 36px;
+      max-width: 1200px;
+      margin: 0 auto;
 
 `
 const ChronicTypes = styled.h3 `
@@ -181,13 +202,20 @@ class ChronicWounds extends Component {
      width: '100vw',
      
    }}>
- 
+ <h1
+                 className="has-text-weight-bold is-size-1"
+                 style={{
+                 color: 'white',
+                 }}
+               >
+                 {node.title}
+               </h1>
 </div>
   <FadeIn transitionDuration={500}>
         <h2>{node.title}</h2>
         <div dangerouslySetInnerHTML={{ __html: node.content }} />
         <ChronicSection>
-
+        <ChronicContainer>
         <ChronicTypes>The 3 Main Types of Chronic Wounds </ChronicTypes>
         <div class="acti-item">
         <div>
@@ -262,7 +290,7 @@ class ChronicWounds extends Component {
             
           </div>
         </div>
-        
+        </ChronicContainer>
         </ChronicSection>
        
         <div class="chronic-outro">

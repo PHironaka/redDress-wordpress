@@ -12,6 +12,22 @@ const Chronic = styled.div`
     gap: 3em 3em;
     padding: 0 2em;
 
+
+  h1{
+      position:relative;
+      top:100px;
+      font-size:6em;
+      padding: 0 36px;
+      max-width: 1200px;
+      margin: 0 auto;
+
+      @media screen and (max-width: 750px) {
+        font-size:2.5em;
+        margin: 0;
+
+    }
+  }
+
     .chronic-intro {
       display:grid;
       grid-template-columns: 1fr 1fr;
@@ -213,7 +229,14 @@ class ChronicWounds extends Component {
                 width: '100vw',
                 
               }}>
- 
+  <h1
+                 className="has-text-weight-bold is-size-1"
+                 style={{
+                 color: 'white',
+                 }}
+               >
+                 {node.title}
+               </h1>
         </div>
 
   <FadeIn transitionDuration={500}>
