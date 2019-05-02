@@ -1,6 +1,6 @@
-import React from "react";
-import { navigate } from "gatsby-link";
-import Layout from '../../components/Layout'
+import React from "react"
+import { navigate } from "gatsby-link"
+import Layout from '../../components/layout'
 import SEO from '../../components/seo'
 import ContactItems from '../../components/contactItems'
 import styled from 'styled-components'
