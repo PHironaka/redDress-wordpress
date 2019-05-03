@@ -38,8 +38,12 @@ const Post = styled.div`
   grid-template-columns:1fr ;
   grid-gap: 2em;
   margin: 1em 0 2em;
+    border-top:1px solid;
   padding:2em 8em 0 0;
-  border-top:1px solid;
+
+
+ 
+
 
 
   @media screen and (max-width: 800px) {
@@ -66,7 +70,7 @@ class News extends Component {
     <NewsPage>
     <div className="full-width-image-container margin-top-0" style={{
                  backgroundImage: `url(
-                  https://reddress-001.netlify.com/static/79e71e94ae199e296a9b3ef8b84b3290/5b12f/photo-1516670428252-df97bba108d1.jpg)`,
+                  https://phiro.000webhostapp.com/wp-content/uploads/2019/04/rawpixel-284723-unsplash.jpg)`,
                  minHeight:'400px',
                  backgroundRepeat:'no-repeat',
                  backgroundSize: 'cover',
@@ -84,7 +88,6 @@ class News extends Component {
                >News</h1>
       </div>
       <NewsContainer>
-
       {data.allWordpressPost.edges.map(({ node }) => (
         <FadeIn transitionDuration={500}>
           <Post>
