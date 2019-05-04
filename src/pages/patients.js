@@ -15,6 +15,7 @@ const Chronic = styled.div`
     margin: -51px 0px 0px;
     gap: 3em 3em;
     padding: 0 2em;
+    
     .acti-item {
       display:grid;
       grid-template-columns: repeat(2, auto);
