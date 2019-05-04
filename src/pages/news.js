@@ -38,10 +38,12 @@ const Post = styled.div`
   grid-template-columns:1fr ;
   grid-gap: 2em;
   margin: 1em 0 2em;
-    border-top:1px solid;
-  padding:2em 8em 0 0;
+    border-bottom:1px solid;
+  padding:2em 8em 2em 0;
 
-
+  p {
+    max-width:700px;
+  }
  
 
 
@@ -51,8 +53,9 @@ const Post = styled.div`
   }
 
   h2 {
-    font-size:1.4em;
-    margin:0 0 1em;
+    font-size: 1.7em;
+    margin: 0 0 1em;
+    max-width: 500px;
   }
 `
 const ReadArticle = styled.a`
@@ -92,6 +95,7 @@ class News extends Component {
         <FadeIn transitionDuration={500}>
           <Post>
             <div>
+              <p>{node.date}</p>
               <h2>{node.title}</h2>
               <div dangerouslySetInnerHTML={{ __html: node.content }} />
               <ReadArticle href="https://google.com" target="_blank">Read More <Arrow /> </ReadArticle>
