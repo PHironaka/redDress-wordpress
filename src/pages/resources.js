@@ -37,6 +37,10 @@ const NewsContainer = styled.div`
   padding:1em 0;
   grid-gap: 3em;
 
+  h3 {
+    font-size:1.6em;
+  }
+
   p {
       max-width:750px;
       margin: 0 0 3em;
@@ -117,7 +121,7 @@ const Brochures = styled.div`
 const PublishedArticles = styled.div`
       display:grid;
       grid-template-columns: 1fr 1fr;
-      grid-gap:1em; 
+      grid-gap:2em; 
       border-top:1px solid;
       padding:2em 0;
 
@@ -128,6 +132,23 @@ const PublishedArticles = styled.div`
         align-self:center;
     }
     
+`
+
+const Video = styled.div`
+    text-align:center;
+    position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+    margin-bottom:5em;
+
+    iframe {
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
 `
 
 class News extends Component {
@@ -193,6 +214,10 @@ class News extends Component {
         </ChronicSection>
         <NewsContainer>
         <h3>Testimonials</h3>
+          <Video>
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/hsFLkkVpzAg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </Video>
+
         </NewsContainer>
 
         <ChronicSection>

@@ -49,7 +49,7 @@ const FooterNav = class extends React.Component {
         <h4>Healthcare Providers</h4>
         <li> <Link to="/chronic-wounds">Chronic Wounds</Link> </li>
         <li> <Link to="/actigraft">Products</Link> </li>
-        <li> <Link to="/about">Technology</Link> </li>
+        <li> <Link to="/technology">Technology</Link> </li>
         <li> <Link to="/resources">Resources</Link> </li>
         <li> <Link to="/news">Testimonials</Link> </li>
         <li> <Link to="/events">Events</Link> </li>
