@@ -27,12 +27,12 @@ const NewsPage = styled.div`
   }
 
   h2 {
-      font-size:2em;
-      max-width: 420px;
+      font-size:3em;
+      margin:0 0 20px;
   }
 
   h3 {
-        font-size:1.5em;
+        font-size:1.8em;
       }
 
       
@@ -87,6 +87,14 @@ const Advantages = styled.div`
       display:grid;
       grid-template-columns: repeat(3, auto);
       grid-gap:3em;
+
+      @media screen and (max-width: 750px) {
+      grid-template-columns: 1fr;
+    }
+
+      p {
+        max-width:300px;
+      }
 
       svg {
         max-width:60px;
@@ -185,7 +193,7 @@ class News extends Component {
 
          <Jobs>
              <JobContainer>
-        <CareerHeader>The 3 Main Types of Chronic Wounds </CareerHeader>
+        <CareerHeader>Job Openings</CareerHeader>
            
         <div class="acti-item">
         <div>
@@ -347,21 +355,31 @@ class News extends Component {
     <h3>Advantages of Working at Red Dress</h3>
     <div>
       <Benefits />
-      <p>Get Competitive Benefits
+      <div>
+      <span>Get Competitive Benefits</span>
+      <p>
 We offer competitive compensation, health benefits, retirement plans, and vacation policies. </p>
+      </div>
       </div>
 
       <div>
       <Growth />
-<p>Join a High-Growth Startup
-We’re a dynamic, growing startup that’s all about fast-paced innovation and collaboration.  </p>
+      <div>
+      <span>Join a High-Growth Startup</span>
+
+
+<p>We’re a dynamic, growing startup that’s all about fast-paced innovation and collaboration.  </p>
+      </div>
       </div>
      
     <div>
       <Purpose />
-      <p>Work with Purpose
-We’re here to revolutionize the healthcare industry for both patients and medical professionals.
+      <div>
+      <span>Work with Purpose</span>
+      <p>We’re here to revolutionize the healthcare industry for both patients and medical professionals.
       </p>
+      </div>
+ 
     </div>
    
     </Advantages>

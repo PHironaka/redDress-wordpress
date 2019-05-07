@@ -42,6 +42,15 @@ const FormContainer = styled.div`
     padding: 0 2em;
     max-width:1200px;
     margin: 0 auto;
+
+    h2 {
+      padding:1em 0;
+    }
+
+    .row1 {
+      display:grid;
+      grid-template-columns:1fr 1fr 1fr;
+    }
 `
 
 
@@ -131,6 +140,8 @@ export default class Index extends React.Component {
           onSubmit={this.handleSubmit}
         >
         <FormContainer>
+
+          <h2>Send Us a Message</h2>
           {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
           <input type="hidden" name="form-name" value="contact" />
           <div hidden>
@@ -139,6 +150,7 @@ export default class Index extends React.Component {
               <input name="bot-field" onChange={this.handleChange} />
             </label>
           </div>
+          <div className="row1">
           <div className="field">
             <label className="label" htmlFor={"name"} >First name</label>
             <div className="control">
@@ -158,6 +170,8 @@ export default class Index extends React.Component {
               <input className="input" type={"text"} name={"name"} onChange={this.handleChange} id={"name"} required={true} />
             </div>
           </div>
+          </div>
+          
 
           <div className="field">
             <label className="label" htmlFor={"name"} >Practice/Facility</label>

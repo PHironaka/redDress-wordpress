@@ -96,9 +96,11 @@ const Chronic = styled.div`
 
     ul {
       margin-left:0em;
+      margin-top:7px;
 
       li {
         margin-left:2em;
+        margin-top:7px;
       }
     }
 `

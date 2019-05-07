@@ -97,7 +97,7 @@ const Chronic = styled.div`
 
     h2 {
       font-size:2em;
-      margin:1em 0 10px;
+      margin:2em 0 10px;
     }
 
     p {
@@ -194,6 +194,10 @@ const ActiTreatment = styled.div`
     }
 `
 
+const IntroSection = styled.div`
+  margin: 4em 0;
+`
+
 
 class ChronicWounds extends Component {
 
@@ -275,18 +279,18 @@ class ChronicWounds extends Component {
                </h1>
 </div>
   <FadeIn transitionDuration={500}>
-        <div>
+        <IntroSection>
 
             <h2>More Effective, More Comfortable Healing</h2>
             <p>Chronic wounds can be painful, uncomfortable, and difficult to treat. ActiGraft is a revolutionary new wound healing solution that promotes the natural wound healing processes of the body. This treatment is more comfortable, more effective, and more affordable.</p>
-        </div>  
-        <div>
+        </IntroSection>  
+        <IntroSection>
             <h2>What is ActiGraft?</h2>
             <p>ActiGraft is a first-of-its-kind chronic wound treatment that uses a patient’s own blood to create an in vitro blood clot. This blood clot is then applied to the wound, where it promotes the natural wound healing processes of the body.</p>
-        </div>   
+        </IntroSection>   
         <ChronicSection>
         <ChronicContainer>
-        <ChronicTypes>What are the benefits of ActiGraft? </ChronicTypes>
+        <ChronicTypes>How does ActiGraft work?</ChronicTypes>
        <p>
            When injured, your skin is capable of repairing itself and healing the wound. This happens through 4 overlapping processes—hemostasis, inflammation, proliferation and remodeling. For these processes to work, it’s essential that blood can get to the site of the wound. However, factors like illness, poor circulation, continued pressure, etc. can prevent blood flow to the wound and hinder the healing process. When this happens, an ulcer may form.
 

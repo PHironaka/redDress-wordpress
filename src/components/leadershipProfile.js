@@ -34,7 +34,7 @@ const Container = styled.div`
 
     h2 {
       font-size:3em;
-      margin-bottom:0;
+      margin:1em 0;
       line-height:1;
     }
   }
@@ -61,8 +61,14 @@ const Container = styled.div`
         h3 {
           font-size:2em;
           line-height:1;
-          margin:0;
+          margin:10px 0;
           
+        }
+        h4 {
+          margin-bottom:1em;
+        }
+        p {
+          margin-bottom:1em;
         }
       }
       
@@ -74,6 +80,10 @@ const Container = styled.div`
       grid-gap:3em;
       padding: 0 2em;
       margin: 0 0 8em;
+
+      p {
+        margin:1em 0;
+      }
 
       @media screen and (max-width: 850px) {
           grid-template-columns: 1fr;

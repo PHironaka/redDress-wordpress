@@ -97,7 +97,6 @@ const GlobalStyle = createGlobalStyle`
 
   html {
     box-sizing: border-box;
-    font-size: 14px;
   }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -105,8 +104,8 @@ const GlobalStyle = createGlobalStyle`
   body {
     padding: 0;
     margin: 0;
-    font-size: 1.2rem;
-    line-height: 1.3;
+    font-size: 16px;
+    line-height: 1.6;
     font-family: 'LabGrotesque-Regular';
     overflow-x:hidden;
   }
@@ -422,6 +421,7 @@ nav {
     text-align:right;
     grid-template-columns: repeat(5, auto);
     grid-gap:2em;
+    margin-top:10px;
     
     @media screen and (max-width: 800px) {
       display: block;

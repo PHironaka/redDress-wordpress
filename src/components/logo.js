@@ -3,9 +3,9 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 const Redress = styled.svg `
-   max-width: 135px;
+   max-width: 140px;
    padding: 0 1em;
-   margin-top:8px;
+   margin-top:13px;
 `
 
 const SvgComponent = props => (

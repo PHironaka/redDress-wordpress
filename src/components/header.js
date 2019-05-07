@@ -12,6 +12,7 @@ const StyledHeader = styled.header`
   max-width: 1200px;
   margin: 8px auto 16px;
   padding: 0 1em;
+  height:103px;
   .bar {
     display: grid;
     grid-template-columns: repeat(2,auto);

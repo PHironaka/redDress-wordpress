@@ -191,17 +191,17 @@ class News extends Component {
                  <Brochures>
                  <Download>
                     <PDF />
-                    <p>ActiGraft Reimbursements(pdf)</p>
+                    <p>ActiGraft Brochure (pdf)</p>
                 </Download>
 
                 <Download>
                     <PDF />
-                    <p>ActiGraft Reimbursements(pdf)</p>
+                    <p>ActiGraft Q&A (pdf)</p>
                 </Download>
 
                 <Download>
                     <PDF />
-                    <p>ActiGraft Reimbursements(pdf)</p>
+                    <p>ActiGraft Procedure FAQ (pdf)</p>
                 </Download>
 
                 <Download>

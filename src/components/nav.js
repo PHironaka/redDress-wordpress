@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import styled from 'styled-components';
 
 const SubNavheader = styled.div`
-    font-size: .7em;
+    font-size: .6em;
     list-style: none;
     display: grid;
     grid-template-columns: 60px 73px 98px 20px;

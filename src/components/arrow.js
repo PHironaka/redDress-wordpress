@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const Redress = styled.svg `
    padding: 0 1em;
-   max-width: 58px;
+   max-width: 53px;
    .cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px}
 `
 
