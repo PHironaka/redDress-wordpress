@@ -39,17 +39,50 @@ const Contact = styled.div`
   `
 
 const FormContainer = styled.div`
-    padding: 0 2em;
+    padding: 0 2em 3em;
     max-width:1200px;
-    margin: 0 auto;
+    margin: 0 auto ;
 
     h2 {
       padding:1em 0;
     }
 
+    input, button, textarea{
+        width:100%;
+        margin:10px 0;
+        padding:10px 1em;
+      }
+
+      textarea {
+        min-height:300px;
+      }
+    button {
+      background:#853f63;
+      border:none;
+      color:white;
+      cursor:pointer;
+
+    }  
+
     .row1 {
       display:grid;
       grid-template-columns:1fr 1fr 1fr;
+      grid-gap:1em;
+
+
+      @media screen and (max-width: 750px) {
+        grid-template-columns:1fr;
+    }
+
+    }
+
+    .row2 {
+      display:grid;
+      grid-template-columns:1fr 1fr ;
+      grid-gap:1em;
+      @media screen and (max-width: 750px) {
+        grid-template-columns:1fr;
+    }
     }
 `
 
@@ -152,54 +185,60 @@ export default class Index extends React.Component {
           </div>
           <div className="row1">
           <div className="field">
-            <label className="label" htmlFor={"name"} >First name</label>
             <div className="control">
-              <input className="input" type={"text"} name={"name"} onChange={this.handleChange} id={"name"} required={true} />
+              <input placeholder="First Name"  className="input" type={"text"} name={"name"} onChange={this.handleChange} id={"name"} required={true} />
             </div>
           </div>
           <div className="field">
-            <label className="label" htmlFor={"name"} >Last name</label>
             <div className="control">
-              <input className="input" type={"text"} name={"name"} onChange={this.handleChange} id={"name"} required={true} />
+              <input placeholder="Last Name" className="input" type={"text"} name={"name"} onChange={this.handleChange} id={"name"} required={true} />
             </div>
           </div>
 
           <div className="field">
-            <label className="label" htmlFor={"name"} >Title</label>
             <div className="control">
-              <input className="input" type={"text"} name={"name"} onChange={this.handleChange} id={"name"} required={true} />
+              <input placeholder="Title" className="input" type={"text"} name={"name"} onChange={this.handleChange} id={"name"} required={true} />
             </div>
           </div>
           </div>
           
 
           <div className="field">
-            <label className="label" htmlFor={"name"} >Practice/Facility</label>
             <div className="control">
-              <input className="input" type={"text"} name={"name"} onChange={this.handleChange} id={"name"} required={true} />
+              <input placeholder="Practice/Facility" className="input" type={"text"} name={"name"} onChange={this.handleChange} id={"name"} required={true} />
             </div>
           </div>
+          <div className="row2">
 
           <div className="field">
-            <label className="label" htmlFor={"email"}>Email</label>
               <div className="control">
-                <input className="input" type={"email"} name={"email"} onChange={this.handleChange} id={"email"} required={true} />
+                <input placeholder="Email" className="input" type={"email"} name={"email"} onChange={this.handleChange} id={"email"} required={true} />
               </div>
           </div>
 
           <div className="field">
-            <label className="label" htmlFor={"email"}>Country</label>
               <div className="control">
-                <input className="input" type={"email"} name={"email"} onChange={this.handleChange} id={"email"} required={true} />
+                <input placeholder="Phone" className="input" type={"email"} name={"email"} onChange={this.handleChange} id={"email"} required={true} />
+              </div>
+          </div>
+          <div className="field">
+              <div className="control">
+                <input placeholder="State/Province/Region" className="input" type={"email"} name={"email"} onChange={this.handleChange} id={"email"} required={true} />
               </div>
           </div>
 
           <div className="field">
-            <label className="label" htmlFor={"email"}>State/Province/Region</label>
               <div className="control">
-                <input className="input" type={"email"} name={"email"} onChange={this.handleChange} id={"email"} required={true} />
+                <input placeholder="Country" className="input" type={"email"} name={"email"} onChange={this.handleChange} id={"email"} required={true} />
               </div>
           </div>
+          
+          </div>
+
+ 
+        
+          
+
 
           <div className="field">
             <div className="control">

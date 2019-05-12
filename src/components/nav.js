@@ -10,6 +10,7 @@ const SubNavheader = styled.div`
     justify-content: end;
     font-family: 'LabGrotesque-Light';
     align-items:center;
+    padding:0 3em;
 
     @media screen and (max-width: 800px) {
       position:absolute;
