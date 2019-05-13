@@ -28,7 +28,7 @@ const Container = styled.div`
   }
 
   .empowerment-heal {
-    max-width: 360px;
+    max-width: 370px;
     padding: 4em 36px;
     float:right;
 
@@ -47,12 +47,13 @@ const Container = styled.div`
   }
 
 .hero {
-  max-width: 360px;
-  margin: 6em 0;
+  max-width: 1200px;
+margin: 6em auto;
   color:white;
   padding: 0 36px;
 
   p {
+  max-width: 360px;
     font-size:1.1em;
   }
 
