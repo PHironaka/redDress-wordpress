@@ -76,7 +76,7 @@ class Events extends Component {
     <NewsPage>
     <div className="full-width-image-container margin-top-0" style={{
                  backgroundImage: `url(
-                  https://phiro.000webhostapp.com/wp-content/uploads/2019/04/rawpixel-284723-unsplash.jpg)`,
+                  https://phiro.000webhostapp.com/wp-content/uploads/2019/05/Events-Header.jpg)`,
                  minHeight:'400px',
                  backgroundRepeat:'no-repeat',
                  backgroundSize: 'cover',

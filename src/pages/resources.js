@@ -161,7 +161,7 @@ class News extends Component {
     <NewsPage>
     <div className="full-width-image-container margin-top-0" style={{
                  backgroundImage: `url(
-                    https://phiro.000webhostapp.com/wp-content/uploads/2019/05/static-head-contactb.jpg)`,
+                  https://phiro.000webhostapp.com/wp-content/uploads/2019/05/Resources-Header.jpg)`,
                 minHeight:'400px',
                  backgroundRepeat:'no-repeat',
                  backgroundSize: 'cover',

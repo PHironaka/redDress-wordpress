@@ -235,7 +235,7 @@ class ChronicWounds extends Component {
   <div key={node.id}>
   <div className="full-width-image-container margin-top-0" style={{
      backgroundImage: `url(
-      https://phiro.000webhostapp.com/wp-content/uploads/2019/04/photo-1516670428252-df97bba108d1.jpeg)`,
+      https://phiro.000webhostapp.com/wp-content/uploads/2019/05/AboutUs-Header.jpg)`,
      minHeight:'400px',
      backgroundRepeat:'no-repeat',
      backgroundSize: 'cover',
@@ -274,9 +274,9 @@ class ChronicWounds extends Component {
         <h3>Our Vision</h3>
     <p>Our unprecedented, proprietary, patented technology delivers the healing power of advanced biologic products at an economically viable price to heal wounds effectively.</p>
         </div>
-        <Img fluid={node.featured_media.localFile.childImageSharp.fluid} alt={node.id}/>
+        <Img fluid={node.acf.heroimage.localFile.childImageSharp.fluid} alt={node.id}/>
  
-        <Img fluid={node.featured_media.localFile.childImageSharp.fluid} alt={node.id}/>
+        <Img fluid={node.acf.productimage.localFile.childImageSharp.fluid} alt={node.id}/>
         <div className="content">
         <h3>About the Team</h3>
     <p>Our experienced team of medical experts and business leaders is committed to delivering advanced, cost-effective chronic wound treatments that improve life for both patients and medical professionals.</p>
@@ -290,7 +290,7 @@ class ChronicWounds extends Component {
     <Link to="/careers">Find Career Opportunities <Arrow /> </Link>
        
         </div>
-        <Img fluid={node.featured_media.localFile.childImageSharp.fluid} alt={node.id}/>
+        <Img fluid={node.acf.partnerimage.localFile.childImageSharp.fluid} alt={node.id}/>
 
 </ AboutContent>
   
@@ -330,7 +330,47 @@ query {
           }
           acf {
             pagebottomsection
-       
+            heroimage {
+            localFile {
+              childImageSharp {
+              fluid(maxWidth: 1000) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+            }
+          }
+
+          productimage {
+            localFile {
+              childImageSharp {
+              fluid(maxWidth: 1000) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+            }
+          }
+          partnerimage {
+            localFile {
+              childImageSharp {
+              fluid(maxWidth: 1000) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+            }
+          }
+
+          
+          }
+
+        
+          featured_media {
+            localFile {
+              childImageSharp {
+              fluid(maxWidth: 1000) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+            }
           }
           title
           excerpt

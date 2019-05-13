@@ -126,7 +126,7 @@ export default class Index extends React.Component {
     <Contact>
     <div className="full-width-image-container margin-top-0" style={{
                  backgroundImage: `url(
-                  https://phiro.000webhostapp.com/wp-content/uploads/2019/05/static-head-contactb.jpg)`,
+                  https://phiro.000webhostapp.com/wp-content/uploads/2019/05/Contact-Header.jpg)`,
                  minHeight:'400px',
                  backgroundRepeat:'no-repeat',
                  backgroundSize: 'cover',
@@ -205,7 +205,7 @@ export default class Index extends React.Component {
 
           <div className="field">
             <div className="control">
-              <input placeholder="Practice/Facility" className="input" type={"text"} name={"name"} onChange={this.handleChange} id={"name"} required={true} />
+              <input placeholder="Practice/Facility" className="input" type={"text"} name={"facility"} onChange={this.handleChange} id={"facility"} required={true} />
             </div>
           </div>
           <div className="row2">
@@ -218,18 +218,18 @@ export default class Index extends React.Component {
 
           <div className="field">
               <div className="control">
-                <input placeholder="Phone" className="input" type={"email"} name={"email"} onChange={this.handleChange} id={"email"} required={true} />
+                <input placeholder="Phone" className="input" type={"phone"} name={"phone"} onChange={this.handleChange} id={"phone"} required={false} />
               </div>
           </div>
           <div className="field">
               <div className="control">
-                <input placeholder="State/Province/Region" className="input" type={"email"} name={"email"} onChange={this.handleChange} id={"email"} required={true} />
+                <input placeholder="State/Province/Region" className="input" type={"region"} name={"region"} onChange={this.handleChange} id={"region"} required={false} />
               </div>
           </div>
 
           <div className="field">
               <div className="control">
-                <input placeholder="Country" className="input" type={"email"} name={"email"} onChange={this.handleChange} id={"email"} required={true} />
+                <input placeholder="Country" className="input" type={"country"} name={"country"} onChange={this.handleChange} id={"country"} required={false} />
               </div>
           </div>
           

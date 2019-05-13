@@ -212,7 +212,7 @@ class ChronicWounds extends Component {
                </h1>
 </div>
   <FadeIn transitionDuration={500}>
-        <h2>{node.title}</h2>
+        <h2>Challenges of Treating Chronic Wounds</h2>
         <div dangerouslySetInnerHTML={{ __html: node.content }} />
         <ChronicSection>
         <ChronicContainer>
@@ -296,7 +296,7 @@ class ChronicWounds extends Component {
         <div class="chronic-outro">
            
           <div dangerouslySetInnerHTML={{ __html: node.acf.pagebottomsection }} />
-          <Img fluid={node.featured_media.localFile.childImageSharp.fluid} alt={node.id}/>
+          <Img fluid={node.acf.partnerimage.localFile.childImageSharp.fluid} alt={node.id}/>
 
         </div>
 
@@ -335,6 +335,16 @@ query {
           }
           acf {
             pagebottomsection
+            partnerimage {
+              localFile {
+                childImageSharp {
+                fluid(maxWidth: 1000) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+
        
           }
           title

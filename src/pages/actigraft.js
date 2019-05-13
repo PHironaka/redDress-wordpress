@@ -105,7 +105,7 @@ const Chronic = styled.div`
     }
 `
 const ActiGraftSection = styled.div`
-    background: #f7f7f7;
+    background: #e6e5ea;
     width: 100vw;
     margin-left: calc(50% - 8px - 50vw);
     position: relative;
@@ -291,7 +291,7 @@ class ChronicWounds extends Component {
                 <h2>{node.title}</h2>
                 <div dangerouslySetInnerHTML={{ __html: node.content }} />
             </div>
-            <Img fluid={node.acf.heroimage.localFile.childImageSharp.fluid} alt={node.id}/>
+            <Img fluid={node.acf.partnerimage.localFile.childImageSharp.fluid} alt={node.id}/>
            
 
             </div>
@@ -510,6 +510,15 @@ query {
             actigraft_simplifiedprocesses_image
             actigraft_costeffectivetreatment_image
             actigraft_costeffectivetreatment
+            partnerimage {
+                localFile {
+                childImageSharp {
+                fluid(maxWidth: 1000) {
+                    ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            }
 
             heroimage {
                 localFile {

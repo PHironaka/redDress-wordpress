@@ -17,7 +17,7 @@ class Leadership extends Component {
               {/* <Img fluid={node.image.localFile.childImageSharp.fluid} alt={node.id}/> */}
               <div className="full-width-image-container margin-top-0" style={{
                  backgroundImage: `url(
-                  https://phiro.000webhostapp.com/wp-content/uploads/2019/04/alex-kotliarskyi-361081-unsplash.jpg)`,
+                  https://phiro.000webhostapp.com/wp-content/uploads/2019/05/Team-Header.jpg)`,
                  minHeight:'400px',
                  backgroundRepeat:'no-repeat',
                  backgroundSize: 'cover',
@@ -54,7 +54,7 @@ export default Leadership
 
 export const pageQuery = graphql`
 query {
-    allWordpressPage (filter: { title: { eq:"Leadership"}})   {
+    allWordpressPage (filter: { title: { eq:"Team"}})   {
         edges {
         node {
           id

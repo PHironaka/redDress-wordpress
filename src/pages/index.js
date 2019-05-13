@@ -15,7 +15,7 @@ const Container = styled.div`
       position:relative;
       top:100px;
       font-size:4em;
-      padding: 0 36px;
+      padding: 0 46px;
       max-width: 1200px;
       margin: 0 auto;
 
@@ -50,7 +50,7 @@ const Container = styled.div`
   max-width: 1200px;
 margin: 6em auto;
   color:white;
-  padding: 0 36px;
+  padding: 0 3em;
 
   p {
   max-width: 360px;
