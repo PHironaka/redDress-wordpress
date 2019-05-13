@@ -28,9 +28,16 @@ const Container = styled.div`
   }
 
   .leader-intro {
-    margin-top:2em;
-    padding: 0 2em;
-    max-width:40em;
+    display:grid;
+    grid-template-columns:1fr;
+    padding: 1em 0;
+    border-bottom:1px solid;
+    max-width:1120px;
+    margin:2em ;
+    p {
+      max-width:40em;
+      padding-left:0;
+    }
 
     h2 {
       font-size:3em;
@@ -42,7 +49,7 @@ const Container = styled.div`
   .leader-profile {
       display:grid;
       grid-template-columns: repeat(2, auto);
-      grid-gap:2em;
+      grid-gap:6em;
       padding: 0 2em;
       margin: 2em 0 0;
 

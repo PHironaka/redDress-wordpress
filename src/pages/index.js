@@ -3,6 +3,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components"
 import FadeIn from 'react-fade-in'
+import { Link, graphql } from "gatsby"
+import Arrow from '../components/arrow'
 
 const Container = styled.div`
   margin: -53px 0 0;
@@ -24,6 +26,46 @@ const Container = styled.div`
     }
 
   }
+
+  .empowerment-heal {
+    max-width: 360px;
+    padding: 4em 36px;
+    float:right;
+
+    h2 {
+      font-size:2.3em;
+      line-height:1.4;
+    }
+    p {
+      margin:5px 0;
+    }
+    a {
+      display:block;
+      margin-top:10px;
+      text-decoration:underline;
+    }
+  }
+
+.hero {
+  max-width: 360px;
+  margin: 6em 0;
+  color:white;
+  padding: 0 36px;
+
+  p {
+    font-size:1.1em;
+  }
+
+  a {
+    color:white;
+    margin-top:10px; 
+    display:block;
+  }
+
+  svg path {
+      stroke:white !important;
+    }
+}
 
   `
   
@@ -63,17 +105,22 @@ const ShopifyContent = styled.div `
 
    .index-testimonials {
     display: grid;
-    grid-template-columns: repeat(4,auto);
+    grid-template-columns: repeat(3,auto);
     grid-gap: 2em;
     padding: 3em 0;
     margin: 2em;
-    border-top:1px solid;
     border-bottom:1px solid;
     @media screen and (max-width: 850px) {
           grid-template-columns: repeat(2,auto);
     }
     h4 {
       margin-top:2em;
+      font-weight:400;
+    }
+
+    h2 {
+      grid-column:1/-1;
+      font-size:2em;
     }
    }
 
@@ -96,6 +143,8 @@ const ShopifyContent = styled.div `
       padding-right:4em;
       margin:1em 0 2em;
     }
+
+    
    }
 
 
@@ -129,8 +178,13 @@ const IndexPage = ({ data }) => (
             color: 'white',
             }}
           >
-            {node.title}
+            Introducing Antigraft
           </h1>
+          <div className="hero">
+          <p>The innovative wound care product that uses whole blood clots to heal chronic ulcers.</p>
+          <Link to="/actigraft">Learn More <Arrow /></Link>
+          </div>
+          
      </div>
           <FadeIn transitionDuration={500}>
             <ShopifyContent dangerouslySetInnerHTML={{ __html: node.content }} />
