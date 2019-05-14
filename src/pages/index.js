@@ -27,6 +27,11 @@ const Container = styled.div`
 
   }
 
+  .empower-container {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
   .empowerment-heal {
     max-width: 370px;
     padding: 4em 36px;
