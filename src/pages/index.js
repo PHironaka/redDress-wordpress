@@ -184,7 +184,7 @@ const IndexPage = ({ data }) => (
             color: 'white',
             }}
           >
-            Introducing Antigraft
+            Introducing Actigraft
           </h1>
           <div className="hero">
           <p>The innovative wound care product that uses whole blood clots to heal chronic ulcers.</p>

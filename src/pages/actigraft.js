@@ -384,7 +384,7 @@ class ChronicWounds extends Component {
 
         <div class="acti-item">
         <div>
-        <h3>Antigraft Uses </h3>
+        <h3>Actigraft Uses </h3>
         </div>
         <div className="actigraft-2" data-target="actiNav2">
           <span className="plus-1"></span>
