@@ -16,6 +16,10 @@ const Items = styled.div`
 
 
     }
+
+    span {
+        display: block;
+    }
     
 
     svg {
@@ -23,7 +27,7 @@ const Items = styled.div`
     }
 
     p {
-        max-width:100px;
+        margin-bottom:0 !important;
     }
 `
 
@@ -36,22 +40,26 @@ const ContactItems = class extends React.Component {
     <Items>
         <div>
         <Phone />
-        <p>Call Us +1-800-674-9614</p>
+        <span>Call Us </span>
+        <p>+1-800-674-9614</p>
         </div>
         <div>
         <Email />
-        <p>Email Us+1-800-674-9614</p>
+        <span>Email </span>
+        <p>+1-800-674-9614</p>
         </div>
         <div>
         <Flag />
-        <p>USA822 A1A North Ste 310
-Ponte Vedra Beach, FL 32082 USA</p>
+        <span>USA</span>
+        <p>822 A1A North Ste 310</p>
+        <p>Ponte Vedra Beach, FL 32082 </p>
         </div>
         <div>
         <Globe />
-        <p>InternationalShkedim 11 st. 
-Pardes-Hanna
-Israel</p>
+        <span>International</span>
+        <p>Shkedim 11 st. Pardes-Hanna</p>
+        <p> Israel</p>
+
         </div>
     </Items>
   )}
