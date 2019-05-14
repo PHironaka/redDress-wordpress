@@ -277,7 +277,6 @@ class ChronicWounds extends Component {
                 <div dangerouslySetInnerHTML={{ __html: node.acf.actigraft_simplifiedprocesses_image }} />
                 <p>{node.acf.actigraft_simplifiedprocesses}</p>
             </div>
-            
             <div>
                 <div dangerouslySetInnerHTML={{ __html: node.acf.actigraft_naturalhealing_image }} />
                 <p>{node.acf.actigraft_naturalhealing}</p>
@@ -464,7 +463,7 @@ class ChronicWounds extends Component {
 <p>Our Education Program is designed to help medical professionals learn more about emerging technologies and innovative wound care solutions. 
 </p>
 <a href="https://google.com" target="_blank" rel="noopener noreferrer">Learn More <Arrow /></a></div>
-<img src="https://phiro.000webhostapp.com/wp-content/uploads/2019/04/rawpixel-472352-unsplash.jpg" alt="" />
+<img src="https://phiro.000webhostapp.com/wp-content/uploads/2019/05/lucas-vasques-453684-unsplash.jpg" alt="actigraft science" />
 </EducationActigraft>   
 
           </Chronic>

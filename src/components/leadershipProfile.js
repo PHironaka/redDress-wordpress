@@ -61,6 +61,8 @@ const Container = styled.div`
       &:nth-child(4) {
         border-bottom: 1px solid;
         padding-bottom:40px;
+        max-width: 1120px;
+        margin: 2em;    
       }
 
     .leader-profile--info {
