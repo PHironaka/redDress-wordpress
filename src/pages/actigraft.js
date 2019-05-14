@@ -35,6 +35,10 @@ const Chronic = styled.div`
       max-width:1120px;
       margin:0 auto;
 
+      p {
+        margin:10px 0;
+      }
+
       @media screen and (max-width: 800px) {
         display:block;
     
@@ -47,6 +51,7 @@ const Chronic = styled.div`
       grid-template-columns: 1fr 1fr;
       grid-gap:2em;
       margin-top:3em;
+      
       
       a {
         margin: 10px 0;
@@ -286,10 +291,15 @@ class ChronicWounds extends Component {
         <div>
         <ActiGraftSection>
             <div class="chronic-intro">
-            <div>
-                <h2>{node.title}</h2>
-                <div dangerouslySetInnerHTML={{ __html: node.content }} />
-            </div>
+              <div>
+                <h2>Take the Guessing Out of Wound Management</h2>
+                <p>Standard of Care topical dressings address one or two aspects of a chronic wound bed.  The ActiGraft dressing contains the provisional extracellular matrix acting not only as a scaffold, but as a signaling, binding and activating substrate that regulates the crosstalk between fibroblasts, keratinocytes, endothelial cells and key inflammatory cells - the big players in wound healing.
+</p>
+                <p>ActiGraft changes the way we treat chronic wounds by managing every stage of the wound healing process and taking the guesswork out of wound treatment. 
+</p>
+               <a href="/actigraft">See How ActiGraft Works <Arrow /></a>
+              </div>
+            
             <Img fluid={node.acf.partnerimage.localFile.childImageSharp.fluid} alt={node.id}/>
            
 
