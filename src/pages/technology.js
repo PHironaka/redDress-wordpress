@@ -5,10 +5,10 @@ import SEO from '../components/seo'
 import FadeIn from 'react-fade-in'
 import styled from 'styled-components'
 import Img from 'gatsby-image';
-import Dot from '../components/dots/fourdot'
-import Dotb from '../components/dots/patients2'
-import Dotc from '../components/dots/patients3'
-import Dotd from '../components/dots/patients4'
+import Dot from '../components/dots/01_Hemostasis.png'
+import Tech1 from '../components/dots/02_Inflammation.png'
+import Dotc from '../components/dots/03_Proliferation.png'
+import Dotd from '../components/dots/04_Remodeling.png'
 import Arrow from '../components/arrow'
 
 const Chronic = styled.div`
@@ -142,8 +142,8 @@ const IconSection = styled.div`
     grid-template-columns:  1fr 2fr;
     grid-gap:2em;
 
-    svg {
-        max-height:60px;
+    img {
+        max-height:120px;
         justify-self:center;
     }
 
@@ -322,18 +322,18 @@ class ChronicWounds extends Component {
         </div>  
         
         <IconSection>
-            <Dot />
-            <p>Hemostasis The body works to stop the bleeding and start the healing process by activating a coagulation cascade. A fibrin blood clot forms that plugs severed blood vessels and fills in tissue discontinuity at the wound site. </p>
+            <img src={Dot} />
+            <p><strong>Hemostasis</strong> The body works to stop the bleeding and start the healing process by activating a coagulation cascade. A fibrin blood clot forms that plugs severed blood vessels and fills in tissue discontinuity at the wound site. </p>
             
-            <Dotb />
-            <p>Inflammation During this phase, white blood cells and macrophages enter the wound to destroy bacteria and remove debris. The blood clot creates a fibrin scaffold that serves as a protective, provisional extracellular matrix (ECM) containing cytokines and growth factors (interleukin, transforming growth factor-β, platelet-derived growth factor, and vascular endothelial growth factor, among others) that facilitate tissue repair. </p>
+            <img src={Tech1} />
+            <p><strong>Inflammation</strong> During this phase, white blood cells and macrophages enter the wound to destroy bacteria and remove debris. The blood clot creates a fibrin scaffold that serves as a protective, provisional extracellular matrix (ECM) containing cytokines and growth factors (interleukin, transforming growth factor-β, platelet-derived growth factor, and vascular endothelial growth factor, among others) that facilitate tissue repair. </p>
 
-           <Dotc />
-            <p>Proliferation The blood clot recruits endothelial cells and fibroblasts to synthesize a permanent ECM. The focus is filling and covering the wound. </p>
+            <img src={Dotc} />
+            <p><strong>Proliferation</strong> The blood clot recruits endothelial cells and fibroblasts to synthesize a permanent ECM. The focus is filling and covering the wound. </p>
 
 
-           <Dotd />
-            <p>Remodeling
+            <img src={Dotd} />
+            <p><strong>Remodeling</strong>
 The blood clot dries out and becomes a protective scab. Under the scab, tissue remodeling takes place undisturbed. The fibrin is replaced by fibronectin and hyaluronan, and the scab falls off to reveal a collagenous scar.</p>
         </IconSection>
        
