@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import FadeIn from 'react-fade-in'
@@ -163,6 +163,47 @@ const ActiGraftSymbols = styled.div`
     }
 `
 
+const NewsContainer = styled.div`
+  margin-top:2em;
+  padding:1em 0;
+  grid-gap: 3em;
+
+  h3 {
+    font-size:1.6em;
+  }
+
+  p {
+      max-width:750px;
+      margin: 0 0 3em;
+  }
+
+ 
+  .pdf {
+      display: block;
+      text-decoration:underline;
+      margin-top:3em;
+
+  }
+`
+
+const Video = styled.div`
+    text-align:center;
+    position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+    margin-bottom:5em;
+
+    iframe {
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+`
+
+
 class ChronicWounds extends Component {
   componentDidMount() {
    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.actigraft-1'), 0);
@@ -260,30 +301,36 @@ class ChronicWounds extends Component {
         <ActiGraftSymbols>
             <div>
                 <div dangerouslySetInnerHTML={{ __html: node.acf.actigraft_fasterapplication_image }} />
+                <h4>Faster Application</h4>
                 <p>{node.acf.actigraft_fasterapplication}</p>
             </div>
 
             <div>
                 <div dangerouslySetInnerHTML={{ __html: node.acf.actigraft_costeffectivetreatment_image }} />
+                <h4>Cost Effective Treatment</h4>
                 <p>{node.acf.actigraft_costeffectivetreatment}</p>
             </div>
             
             <div>
                 <div dangerouslySetInnerHTML={{ __html: node.acf.actigraft_patientcomfort_image }} />
+                <h4>Patient Comfort</h4>
                 <p>{node.acf.actigraft_patientcomfort}</p>
             </div>
 
             <div>
                 <div dangerouslySetInnerHTML={{ __html: node.acf.actigraft_easyintegration_image }} />
+                <h4>Easy Integration</h4>
                 <p>{node.acf.actigraft_easyintegration}</p>
             </div>
 
             <div>
                 <div dangerouslySetInnerHTML={{ __html: node.acf.actigraft_simplifiedprocesses_image }} />
+                <h4>Simplified Process</h4>
                 <p>{node.acf.actigraft_simplifiedprocesses}</p>
             </div>
             <div>
                 <div dangerouslySetInnerHTML={{ __html: node.acf.actigraft_naturalhealing_image }} />
+                <h4>Natural Healing</h4>
                 <p>{node.acf.actigraft_naturalhealing}</p>
             </div>
 
@@ -306,6 +353,14 @@ class ChronicWounds extends Component {
             </div>
         </ActiGraftSection>
         </div>
+
+        <NewsContainer>
+        <h3>RD1 Kit Procedure</h3>
+          <Video>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/6ncHm2ptklo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </Video>
+
+        </NewsContainer>
 
         <div class="acti-item">
         <div>
@@ -472,7 +527,7 @@ class ChronicWounds extends Component {
 <h3>Education for the medical professional</h3>
 <p>Our Education Program is designed to help medical professionals learn more about emerging technologies and innovative wound care solutions. 
 </p>
-<a href="https://google.com" target="_blank" rel="noopener noreferrer">Learn More <Arrow /></a></div>
+<Link to="/education">Learn More <Arrow /></Link></div>
 <img src="https://phiro.000webhostapp.com/wp-content/uploads/2019/05/lucas-vasques-453684-unsplash.jpg" alt="actigraft science" />
 </EducationActigraft>   
 
@@ -498,7 +553,7 @@ query {
           featured_media {
             localFile {
               childImageSharp {
-              fluid(maxWidth: 1000) {
+              fluid(maxWidth: 3000) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -522,7 +577,7 @@ query {
             partnerimage {
                 localFile {
                 childImageSharp {
-                fluid(maxWidth: 1000) {
+                fluid(maxWidth: 4000) {
                     ...GatsbyImageSharpFluid
                 }
               }
@@ -532,7 +587,7 @@ query {
             heroimage {
                 localFile {
                 childImageSharp {
-                fluid(maxWidth: 1000) {
+                fluid(maxWidth: 4000) {
                     ...GatsbyImageSharpFluid
                 }
               }
