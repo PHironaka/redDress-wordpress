@@ -529,7 +529,7 @@ class ChronicWounds extends Component {
 <p>Our Education Program is designed to help medical professionals learn more about emerging technologies and innovative wound care solutions. 
 </p>
 <Link to="/education">Learn More <Arrow /></Link></div>
-<img src="https://phiro.000webhostapp.com/wp-content/uploads/2019/05/lucas-vasques-453684-unsplash.jpg" alt="actigraft science" />
+<img src="https://phiro.000webhostapp.com/wp-content/uploads/2019/05/iStock-1019065700.jpg" alt="actigraft science" />
 </EducationActigraft>   
 
           </Chronic>
