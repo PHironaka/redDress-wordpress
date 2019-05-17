@@ -158,7 +158,7 @@ class News extends Component {
 
     return (
   <Layout>
-    <SEO title="News" />
+    <SEO title="Resources" />
     <NewsPage>
     <div className="full-width-image-container margin-top-0" style={{
                  backgroundImage: `url(
