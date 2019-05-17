@@ -140,12 +140,13 @@ const Video = styled.div`
 	padding-bottom: 56.25%; /* 16:9 */
 	padding-top: 25px;
 	height: 0;
-    margin-bottom:5em;
+  margin-bottom:5em;
 
     iframe {
 	position: absolute;
 	top: 40px;
-	left: 0;
+  left: 0;
+  padding: 0 3em;
 	width: 100%;
 	height: 100%;
 }
@@ -215,8 +216,8 @@ class News extends Component {
         <NewsContainer>
         <h3>Testimonials</h3>
           <Video>
-               <iframe width="560" height="315" src="https://www.youtube.com/embed/hsFLkkVpzAg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </Video>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6ncHm2ptklo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </Video>
 
         </NewsContainer>
 

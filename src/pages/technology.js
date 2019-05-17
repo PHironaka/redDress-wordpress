@@ -230,7 +230,8 @@ const Video = styled.div`
 	position: absolute;
 	top: 70px;
 	left: 0;
-	width: 100%;
+  width: 100%;
+  padding:0 3em;
 	height: 100%;
 }
 `
@@ -357,7 +358,8 @@ The blood clot dries out and becomes a protective scab. Under the scab, tissue r
             </PublishedArticles>    
             <Video>
                  <h3>Hear What Wound Care Professionals Have to Say About ActiGraft</h3>
-                 <iframe width="560" height="315" src="https://www.youtube.com/embed/hsFLkkVpzAg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/6ncHm2ptklo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
             </Video>
     </FadeIn>
   </div>
