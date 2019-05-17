@@ -119,8 +119,6 @@ const Brochures = styled.div`
 `
 
 const PublishedArticles = styled.div`
-      display:grid;
-      grid-template-columns: 1fr 1fr;
       grid-gap:2em; 
       border-top:1px solid;
       padding:2em 0;
@@ -225,12 +223,9 @@ class News extends Component {
             <h4>Efficacy &Safety of a Novel Autologous Wound Matrix in the Management of Complicated, Chronic Wounds: A Pilot Study</h4>
             <Link to="/actigraft">Read Article <Arrow /> </Link>
             </div>
-            <img src="https://phiro.000webhostapp.com/wp-content/uploads/2019/04/rawpixel-1135756-unsplash-1024x692.jpg" />
-            
             </PublishedArticles>    
 
             <PublishedArticles>
-             <img src="https://phiro.000webhostapp.com/wp-content/uploads/2019/04/rawpixel-472352-unsplash.jpg" />
              <div>
             <h4>Safety and Efficacy of an Autologous Blood Clot Product (RD1) in the Management of Texas 1A or 2A Neuropathic Diabetic Foot Ulcers: A Prospective, Multicenter, Open Label Pilot Study </h4>
             <Link to="/actigraft">Read Article <Arrow /> </Link>
