@@ -344,12 +344,12 @@ The blood clot dries out and becomes a protective scab. Under the scab, tissue r
             <p>Chronic wounds—including diabetic ulcers, venous and arterial ulcers, and pressure ulcers—often don’t heal or heal slowly because an underlying defect is impeding blood flow to the wound site. This lack of blood prevents the body from going through its natural wound healing process. </p>
             <Link to="/actigraft">Read Article <Arrow /> </Link>
             </div>
-            <img src="https://phiro.000webhostapp.com/wp-content/uploads/2019/04/rawpixel-1135756-unsplash-1024x692.jpg" />
+            <img src="https://phiro.000webhostapp.com/wp-content/uploads/2019/05/iStock-623682924.jpg" />
             
             </PublishedArticles>    
 
             <PublishedArticles>
-             <img src="https://phiro.000webhostapp.com/wp-content/uploads/2019/04/rawpixel-472352-unsplash.jpg" />
+             <img src="https://phiro.000webhostapp.com/wp-content/uploads/2019/05/Whole-Blood-Clot.jpg" />
              <div>
             <h2>Using ActiGraft to Treat Chronic Wounds</h2>
             <p>ActiGraft is the first wound care product that enables health care providers to produce—in real time—in vitro blood clots from a patient’s whole blood. This innovative solution brings the patient’s blood to the wound site to initiate and promote the healing process. Once applied, the blood clot serves as the protective covering, biologic fibrin scaffold, and wound microenvironment to promote the natural wound healing processes of the body.</p>
