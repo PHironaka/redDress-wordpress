@@ -235,7 +235,7 @@ class ChronicWounds extends Component {
   <div key={node.id}>
   <div className="full-width-image-container margin-top-0" style={{
      backgroundImage: `url(
-      https://phiro.000webhostapp.com/wp-content/uploads/2019/05/AboutUs-Header.jpg)`,
+      https://phiro.000webhostapp.com/wp-content/uploads/2019/05/iStock-517058335.jpg)`,
      minHeight:'400px',
      backgroundRepeat:'no-repeat',
      backgroundSize: 'cover',
