@@ -106,7 +106,7 @@ const ChronicContainer = styled.div`
 
 const Brochures = styled.div`
       display:grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       grid-gap:1em;
       margin: 2em 0;
 
@@ -205,10 +205,6 @@ class News extends Component {
                     <p>ActiGraft Procedure FAQ (pdf)</p>
                 </Download>
 
-                <Download>
-                    <PDF />
-                    <p>ActiGraft Reimbursements(pdf)</p>
-                </Download>
                  </Brochures>
             </ChronicContainer>
 
@@ -223,7 +219,7 @@ class News extends Component {
 
         <ChronicSection>
             <ChronicContainer>
-            <h3>Published Articles</h3>
+            <h3>Clinical papers</h3>
              <PublishedArticles>
             <div>
             <h4>Efficacy &Safety of a Novel Autologous Wound Matrix in the Management of Complicated, Chronic Wounds: A Pilot Study</h4>
