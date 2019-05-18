@@ -217,21 +217,14 @@ const Video = styled.div`
 	padding-bottom: 56.25%; /* 16:9 */
 	padding-top: 25px;
 	height: 0;
-    margin-bottom:12em;
-
-    h3 {
-    position: relative;
-
-        font-size:1.5em
-        max-width:699px;
-    }
+  margin-bottom:5em;
 
     iframe {
 	position: absolute;
-	top: 70px;
-	left: 0;
-  width: 100%;
-  padding:0 3em;
+	top: 40px;
+  left: 0;
+  padding: 0 3em;
+	width: 100%;
 	height: 100%;
 }
 `
@@ -357,10 +350,20 @@ The blood clot dries out and becomes a protective scab. Under the scab, tissue r
             </div>
             </PublishedArticles>    
             <Video>
-                 <h3>Hear What Wound Care Professionals Have to Say About ActiGraft</h3>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/6ncHm2ptklo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </Video>
 
-            </Video>
+          <Video>
+
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/WCHY4HfvhsE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </Video>
+
+          <Video>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/pUa0OXkj9Y8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </Video>
+          <Video>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/fvveLKd4dXk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </Video>
     </FadeIn>
   </div>
 

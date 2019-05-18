@@ -210,7 +210,19 @@ class News extends Component {
         <NewsContainer>
         <h3>Testimonials</h3>
           <Video>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/6ncHm2ptklo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/6ncHm2ptklo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </Video>
+
+          <Video>
+
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/WCHY4HfvhsE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </Video>
+
+          <Video>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/pUa0OXkj9Y8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </Video>
+          <Video>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/fvveLKd4dXk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </Video>
 
         </NewsContainer>
