@@ -14,11 +14,6 @@ const GlobalFooter = styled.footer`
   color:white;
   margin-top:7em;
 
-  svg {
-    position: absolute;
-    top: -50px;
-    margin:0 auto;
-  }
 
   .bar {
     display: grid;

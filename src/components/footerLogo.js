@@ -1,9 +1,26 @@
 import React from 'react'
 import styled from "styled-components"
+import IG from "../components/social/instagram"
+import FB from "../components/social/facebook"
+import TW from "../components/social/twitter"
 
 const Redress = styled.svg `
    max-width: 135px;
    padding: 0 1em;
+   position: absolute;
+    top: -50px;
+    margin:0 auto;
+`
+
+const Social = styled.div`
+margin-top: 10px;
+  a {
+    color:black;
+  }
+
+  display:grid;
+  grid-template-columns:20px 20px 20px;
+  grid-gap:2em;
 `
 
 const CopyContact = styled.div`
@@ -48,8 +65,13 @@ const SvgComponent = props => (
         <CopyContact>
         <div>
             <p>
-            Shkedim 11 st. Pardes-Hanna, Israel
+            822 A1A North Ste 310 Ponte Verda Beach, FL 32082
             </p>
+            <Social>
+      <TW />
+      <IG />
+      <FB />
+      </Social> 
         </div>
         <div>
             <p>+972-54-5800765</p>
