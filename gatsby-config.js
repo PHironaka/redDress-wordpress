@@ -54,32 +54,28 @@ module.exports = {
       },
     },
 
-    // {
-    //   resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
-    //   options: {
-    //     // Fields to index
-    //     fields: [`title`, `excerpt`],
-    //     // How to resolve each field`s value for a supported node type
-    //     resolvers: {
-    //       // For any node of type MarkdownRemark, list how to resolve the fields` values
-    //       MarkdownRemark: {
-    //         title: node => node.frontmatter.title,
-    //         excerpt: node => node.excerpt,
-    //         slug: node => node.fields.slug,
-    //       },
+    {
+      resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
+      options: {
+        // Fields to index
+        fields: [`title`, `path`],
+        // How to resolve each field`s value for a supported node type
+        resolvers: {
+          // For any node of type MarkdownRemark, list how to resolve the fields` values
+
+          wordpress__PAGE: {
+            title: node => node.title,
+            path: node => node.slug,
+            excerpt: node => node.excerpt,
+          },
+
 
          
 
-    //     },
-    //   },
-    // },
+        },
+      },
+    },
 
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
-    
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
+ 
   ],
 }
