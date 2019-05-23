@@ -378,7 +378,8 @@ nav {
   }
 }
 
-.dropdown-content {
+.dropdown {
+  .dropdown-content {
     display:none;
     position: absolute;
     background-color: #f1f1f1;
@@ -391,12 +392,15 @@ nav {
     }
   }
 
-  .dropdown:hover {
+  &:hover {
     .dropdown-content {
     display: block;
   }
   }
-  
+
+}
+
+
  
 
 .navMenu {
