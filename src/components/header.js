@@ -4,8 +4,6 @@ import React from "react"
 import Nav from './nav'
 import RedressLogo from './logo'
 import styled from 'styled-components';
-import { StaticQuery } from "gatsby"
-import Search from "./search"
 
 
 const StyledHeader = styled.header`
@@ -18,8 +16,6 @@ const StyledHeader = styled.header`
   .bar {
     display: grid;
     grid-template-columns: repeat(2,auto);
-
- 
   }
   .sub-bar {
     display: grid;
@@ -27,35 +23,13 @@ const StyledHeader = styled.header`
     border-bottom: 1px solid ${props => props.theme.lightgrey};
   }
 `
-
-const NavItems = styled.div`
-    grid-template-columns: 1fr 20px;
-    display: grid;
-    grid-gap:1em;
-
-`
-
-const Header = () => (
-  <StaticQuery
-  query={graphql`
-    query SearchIndexQuery {
-      siteSearchIndex {
-        index
-      }
-    }
-  `}
-    render={data => (
+const Header = ({ siteTitle }) => (
   <StyledHeader>
   <div className="bar">
       <RedressLogo />
-      <NavItems>
     <Nav />
-  <Search searchIndex={data.siteSearchIndex.index} />
-  </NavItems>
   </div>
 </StyledHeader>
-)}
-/>
 )
 
 Header.propTypes = {

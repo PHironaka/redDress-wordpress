@@ -385,7 +385,6 @@ nav {
 
 }
 
-
 .navbar-brand {
   padding:0 1em;
 }
@@ -415,7 +414,7 @@ nav {
 .navbar-start {
 
   ul {
-    padding:0 ;
+    padding:0 2em;
     max-width: 100%;
     list-style:none;
     display: grid;
@@ -445,27 +444,6 @@ nav {
     margin:  0;
 
   }
-
- 
-
-  .dropdown-content {
-    display:none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-
-    li {
-      text-align:center;
-      padding:10px 0;
-    }
-  }
-
-  .dropdown:hover .dropdown-content {display: block;}
-
-
-
   
   .navbar-item {
     transition: all 0.3s ease 0s;
@@ -496,25 +474,6 @@ nav {
     
   }
 }
-
-#searchForm {
-  display:none;
-}
-
-#searchForm.is-active {
-  display: block;
-	height: auto;
-  opacity: 1;
-  z-index: 10000;
-position: fixed;
-width: 100%;
-height: 100%;
-text-align: center;
-background: white;
-left: 0;
-top: 75px;
-}
-
 
 .navbar-menu{
 	transition: height 1s ease-in-out, opacity 1s ease-in-out;
