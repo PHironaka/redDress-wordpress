@@ -391,7 +391,9 @@ nav {
     }
   }
 
-  .dropdown:hover, .dropdown-content {display: block;}
+  .dropdown:hover.dropdown-content {
+    display: block;
+  }
 
 .navMenu {
   transition: height 350ms ease-in-out, opacity 750ms ease-in-out;
