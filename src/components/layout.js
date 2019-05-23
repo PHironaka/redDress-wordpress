@@ -385,14 +385,13 @@ nav {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-
     li {
       text-align:center;
       padding:10px 0;
     }
   }
 
-  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover, .dropdown-content {display: block;}
 
 .navMenu {
   transition: height 350ms ease-in-out, opacity 750ms ease-in-out;
