@@ -379,7 +379,7 @@ nav {
 }
 
 .dropdown {
-  ul {
+  .dropdown-content {
     visibility: hidden;
   opacity: 0;
   position: absolute;
