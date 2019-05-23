@@ -186,7 +186,7 @@ class News extends Component {
         </NewsContainer>
         <ChronicSection>
             <ChronicContainer>
-            <h3>AntiGraft Information</h3>
+            <h3>ActiGraft Information</h3>
                  <Brochures>
                  <Download>
                     <PDF />

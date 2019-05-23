@@ -17,7 +17,7 @@ class Leadership extends Component {
               {/* <Img fluid={node.image.localFile.childImageSharp.fluid} alt={node.id}/> */}
               <div className="full-width-image-container margin-top-0" style={{
                  backgroundImage: `url(
-                  https://phiro.000webhostapp.com/wp-content/uploads/2019/05/Team-Header.jpg)`,
+                  https://phiro.000webhostapp.com/wp-content/uploads/2019/05/Team-Header-1.jpg)`,
                  minHeight:'400px',
                  backgroundRepeat:'no-repeat',
                  backgroundSize: 'cover',
