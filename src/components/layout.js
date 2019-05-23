@@ -379,26 +379,29 @@ nav {
 }
 
 .dropdown {
-  .dropdown-content {
-    display:none;
-    position: absolute;
-    background-color: #f1f1f1;
+  ul {
+    visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+  background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    li {
-      text-align:center;
-      padding:10px 0;
-    }
-  }
 
   &:hover {
-    .dropdown-content {
-    display: block;
+    visibility: visible;
+  opacity: 1;
+  display: block;
   }
-  }
+}
 
 }
+
+
 
 
  

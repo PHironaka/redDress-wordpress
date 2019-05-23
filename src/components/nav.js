@@ -90,13 +90,13 @@ const Navbar = class extends React.Component {
               Professionals &#9660;
             </Link>
 
-            <div className="dropdown-content">
+            <ul className="dropdown-content">
                 <li><Link to="chronic-wounds">Chronic Wounds</Link></li>
                 <li><Link to="actigraft">Product</Link></li>
                 <li><Link to="technology">Technology</Link></li>
                 <li><Link to="resources">Resources</Link></li>
                 <li><Link to="testimonials">Testimonials</Link></li>
-           </div>
+           </ul>
            
           </li>
           
@@ -115,13 +115,13 @@ const Navbar = class extends React.Component {
             <Link className="navbar-item" to="about-us">
               About &#9660;
             </Link>
-            <div className="dropdown-content">
+            <ul className="dropdown-content">
                 <li><Link to="about">Company Overview</Link></li>
                 <li><Link to="leadership">Leadership</Link></li>
                 <li><Link to="careers">Careers</Link></li>
                 <li><Link to="testimonials">Testimonials</Link></li>
            
-           </div>
+           </ul>
           </li>
           <li>
             <Link className="navbar-item" to="contact">
