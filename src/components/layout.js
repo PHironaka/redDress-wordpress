@@ -378,6 +378,22 @@ nav {
   }
 }
 
+.dropdown-content {
+    display:none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+    li {
+      text-align:center;
+      padding:10px 0;
+    }
+  }
+
+  .dropdown:hover .dropdown-content {display: block;}
+
 .navMenu {
   transition: height 350ms ease-in-out, opacity 750ms ease-in-out;
   transition: all 0.5s ease;
@@ -445,6 +461,9 @@ nav {
 
   }
   
+  
+
+
   .navbar-item {
     transition: all 0.3s ease 0s;
     position: relative;
