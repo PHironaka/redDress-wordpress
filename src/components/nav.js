@@ -91,29 +91,19 @@ const Navbar = class extends React.Component {
             </Link>
 
             <div className="dropdown-content">
-                <li><a href="/chronic-wounds">Chronic Wounds</a></li>
-                <li><a href="/actigraft">Product</a></li>
-                <li><a href="/technology">Technology</a></li>
-                <li><a href="/resources">Resources</a></li>
-                <li><a href="/testimonials">Testimonials</a></li>
-              
+                <li><Link to="chronic-wounds">Chronic Wounds</Link></li>
+                <li><Link to="actigraft">Product</Link></li>
+                <li><Link to="technology">Technology</Link></li>
+                <li><Link to="resources">Resources</Link></li>
+                <li><Link to="testimonials">Testimonials</Link></li>
            </div>
            
           </li>
           
           <li className="dropdown">
             <Link className="navbar-item" to="patients">
-              Patients &#9660;
+              Patients
             </Link>
-
-            <div className="dropdown-content">
-                <li><a href="/chronic-wounds">Conditions</a></li>
-                <li><a href="/products">Procedures</a></li>
-                <li><a href="/technology">Resource</a></li>
-                <li><a href="/resources">Center</a></li>
-                <li><a href="/testimonials">Testimonials</a></li>
-              
-           </div>
 
           </li>
           <li>
@@ -126,9 +116,11 @@ const Navbar = class extends React.Component {
               About &#9660;
             </Link>
             <div className="dropdown-content">
-                <li><a href="/about">Company Overview</a></li>
-                <li><a href="/leadership">Leadership</a></li>
-                <li><a href="/technology">Careers</a></li>
+                <li><Link to="about">Company Overview</Link></li>
+                <li><Link to="leadership">Leadership</Link></li>
+                <li><Link to="careers">Careers</Link></li>
+                <li><Link to="testimonials">Testimonials</Link></li>
+           
            </div>
           </li>
           <li>
