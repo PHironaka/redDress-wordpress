@@ -190,7 +190,8 @@ const IndexPage = ({ data }) => (
           <p>The innovative wound care product that uses whole blood clots to heal chronic ulcers.</p>
           <Link to="/actigraft">Learn More <Arrow /></Link>
           </div>
-        </div>
+          
+     </div>
           <FadeIn transitionDuration={500}>
             <ShopifyContent dangerouslySetInnerHTML={{ __html: node.content }} />
           </FadeIn>
