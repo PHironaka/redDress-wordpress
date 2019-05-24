@@ -37,6 +37,10 @@ const Container = styled.div`
       -ms-touch-action: pan-y;
       touch-action: pan-y;
       -webkit-tap-highlight-color: transparent;
+      margin-left:'calc(-50vw + 50% - 8px)';
+            position:relative;
+            width:100vw;
+  
   }
   
   .slick-list {
@@ -426,7 +430,10 @@ const IndexPage = ({ data }) => (
 
          <ProductImageSlider>
            <div>
-           <Img fluid={node.featured_media.localFile.childImageSharp.fluid} alt={node.title} />
+           <Img fluid={node.featured_media.localFile.childImageSharp.fluid} alt={node.title}
+           style={{minHeight:'400px', marginLeft:'calc(-50vw + 50% - 8px)',
+           position:'relative', 
+           width: '100vw', }} />
            <h1
             className="has-text-weight-bold is-size-1"
             style={{
@@ -442,11 +449,14 @@ const IndexPage = ({ data }) => (
            </div>
 
            <div>
-           <Img fluid={node.featured_media.localFile.childImageSharp.fluid} alt={node.title} />
+           <Img fluid={node.featured_media.localFile.childImageSharp.fluid} alt={node.title}
+           style={{minHeight:'400px', marginLeft:'calc(-50vw + 50% - 8px)',
+           position:'relative', 
+           width: '100vw', }} />
            <h1
             className="has-text-weight-bold is-size-1"
             style={{
-            color: 'white',
+            color: 'white'
             }}
           >
             Introducing Actigraft

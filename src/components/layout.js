@@ -21,11 +21,7 @@ const StyledPage = styled.div`
   color: ${props => props.theme.black};
 `;
 
-const Inner = styled.div`
-  max-width: ${props => props.theme.maxWidth};
-  margin: 0 auto;
-  position: relative;
-`;
+
 const GlobalStyle = createGlobalStyle`
  html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -770,7 +766,7 @@ const Layout = ({ children }) => (
         <Header />
         <ThemeProvider theme={theme}>
           <StyledPage>
-          <Inner>{children}</Inner>
+          {children}
           <Footer />
           </StyledPage>
         </ThemeProvider>
