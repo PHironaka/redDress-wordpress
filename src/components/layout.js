@@ -364,6 +364,26 @@ dd {
   margin-bottom: 1.45rem;
 }
 
+#searchForm {
+  display:none;
+}
+
+#searchForm.is-active {
+  display: block;
+	height: auto;
+  opacity: 1;
+  z-index: 10000;
+position: fixed;
+width: 100%;
+height: 100%;
+text-align: center;
+background: white;
+left: 0;
+top: 75px;
+}
+
+
+
 nav {
   background: transparent;
   top: 3px;
@@ -379,15 +399,16 @@ nav {
 }
 
 .dropdown {
+
   .dropdown-content {
-    visibility: hidden;
-  opacity: 0;
-  position: absolute;
+    display:none;
+    position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
+
 
 }
 
@@ -395,8 +416,6 @@ nav {
 
 .dropdown:hover > .dropdown-content,
 .dropdown li .dropdown-content:hover {
-  visibility: visible;
-  opacity: 1;
   display: block;
 }
 
