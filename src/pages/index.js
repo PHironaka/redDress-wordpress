@@ -5,7 +5,7 @@ import styled from "styled-components"
 import FadeIn from 'react-fade-in'
 import { Link, graphql } from "gatsby"
 import Arrow from '../components/arrow'
-import ProductImageSlider from '../components/ProductImageSlider'
+import ProductImageSlider from '../components/productImageSlider'
 import Img from 'gatsby-image';
 
 const Container = styled.div`
