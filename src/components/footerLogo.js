@@ -74,7 +74,7 @@ const SvgComponent = props => (
       </Social> 
         </div>
         <div>
-            <p>+972-54-5800765</p>
+            <p>800 674 9615</p>
             <a href="mailto:info@reddress.co.il">info@reddress.co.il</a>
         </div>
         </CopyContact>
